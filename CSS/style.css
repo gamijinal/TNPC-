@@ -1,0 +1,8 @@
+:root
+{
+    --primary_color : rgb(242, 100, 25);
+    --secondary_color : rgb(51, 101, 138);
+    --Text_color : Black;
+    --hover_color: #ccc;
+    /* --bgcolor:#555555; */
+}
