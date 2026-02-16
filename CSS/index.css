@@ -1,0 +1,316 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* nav bar section css */
+.nav_bar {
+    padding: 15px 60px;
+}
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   /* Vertical Center */
+}
+.logo_section {
+    display: flex;
+    align-items: center;   /* Logo + Text Center */
+}
+.logo_section img {
+    height: 75px;
+}
+.college_name {
+    margin-left: 15px;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.college_name h1 {
+    margin: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--primary_color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.college_name h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+.menu li a:hover {
+    color: #0077cc;
+}
+
+/* banner section css */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* course css */
+
+.course_overview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   /* 2 cards side by side */
+    gap: 40px;
+    padding: 60px 80px;
+}
+
+.course_card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.course_card h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.course_card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.course_card a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0077cc;
+}
+
+.course_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.course_section {
+    padding: 80px 100px;
+    background-color: #ffffff;
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section_title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section_title p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* footer css */
+
+.footer {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding-top: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 0 100px 60px;
+}
+
+.footer_col h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer_col h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer_col h4::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #00c6ff;
+    display: block;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.footer_col p {
+    line-height: 1.7;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.footer_col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_col ul li {
+    margin-bottom: 12px;
+}
+
+.footer_col ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footer_col ul li a:hover {
+    color: #00c6ff;
+    padding-left: 6px;
+}
+
+.footer_bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .footer_container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 30px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* news css */
+
+.news_section {
+    padding: 80px 100px;
+    background-color: #f8f9fc;
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section_title h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section_title p {
+    color: #666;
+}
+
+.news_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.news_card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.news_card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.news_image {
+    position: relative;
+}
+
+.news_image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.news_date {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #0077cc;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.news_content {
+    padding: 25px;
+}
+
+.news_content h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.news_content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.news_content a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.news_content a:hover {
+    color: #005fa3;
+}
