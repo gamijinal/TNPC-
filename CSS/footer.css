@@ -1,0 +1,43 @@
+/* =======================
+   FOOTER
+======================= */
+.footer {
+    background:var(--primary_color);
+    color: #fff;
+    padding-top: 60px;
+}
+
+.footer_container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer_col h3,
+.footer_col h4 {
+    margin-bottom: 20px;
+}
+
+.footer_col p,
+.footer_col a {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer_col a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.footer_bottom {
+    text-align: center;
+    padding: 20px;
+    background:var(--secondary_color);
+    margin-top: 40px;
+    font-size: 14px;
+}
