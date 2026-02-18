@@ -70,7 +70,7 @@
             <div class="news_card">
                 <div class="news_image">
                     <img src="/images/news1.jpg" alt="News 1">
-                    <span class="news_date">12 Feb 2026</span>
+                    <!-- <span class="news_date">12 Feb 2026</span> -->
                 </div>
                 <div class="news_content">
                     <h3>Annual Cultural Fest 2026</h3>
@@ -82,11 +82,11 @@
             <div class="news_card">
                 <div class="news_image">
                     <img src="/images/news2.jpg" alt="News 2">
-                    <span class="news_date">05 Feb 2026</span>
+                    <!-- <span class="news_date">05 Feb 2026</span> -->
                 </div>
                 <div class="news_content">
                     <h3>Guest Lecture on AI & Technology</h3>
-                    <p>Industry experts delivered an insightful session on Artificial Intelligence and emerging technologies.</p>
+                    <!-- <p>Industry experts delivered an insightful session on Artificial Intelligence and emerging technologies.</p> -->
                     <a href="#">Read More</a>
                 </div>
             </div>
@@ -94,11 +94,11 @@
             <div class="news_card">
                 <div class="news_image">
                     <img src="/images/news3.jpg" alt="News 3">
-                    <span class="news_date">28 Jan 2026</span>
+                    <!-- <span class="news_date">28 Jan 2026</span> -->
                 </div>
                 <div class="news_content">
                     <h3>Admissions Open 2026-27</h3>
-                    <p>Admissions are now open for BCA and BBA programs. Apply early to secure your seat.</p>
+                    <!-- <p>Admissions are now open for BCA and BBA programs. Apply early to secure your seat.</p> -->
                     <a href="#">Read More</a>
                 </div>
             </div>

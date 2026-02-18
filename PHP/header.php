@@ -27,7 +27,7 @@
                 <li><a href="#course">Course</a></li>
                 <li><a href="#admission">Admission</a></li>
                 <li><a href="#student">Student</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="/PHP/about.php">About</a></li>
                 <li><a href="/PHP/contact.php">Contact US</a></li>
             </ul>
 

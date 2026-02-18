@@ -1,4 +1,5 @@
 <?php
+include 'header.php';
 ?>
 
 <!DOCTYPE html>
@@ -165,7 +166,7 @@
 
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<!-- <footer>
 
     <div class="footer-grid">
 
@@ -194,7 +195,10 @@
         © <?php echo date("Y"); ?> TNPC College. All Rights Reserved.
     </div>
 
-</footer>
+</footer> -->
 
+<?php
+include 'footer.php';
+?>
 </body>
 </html>
