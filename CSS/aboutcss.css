@@ -17,65 +17,89 @@ header{
     background:#1e3a8a;
     color:white;
     text-align:center;
-    padding:15px 20px;   /* Compact height */
+        padding:15px 20px;   /* pehle 40px tha, ab kam kar diya */
+
 }
 
 header h1{
-    font-size:34px;
-    margin:0;
-    letter-spacing:1px;
+    font-size:36px;
+    margin-bottom:12px;
+}
+
+header p{
+    font-size:18px;
+    opacity:0.9;
 }
 
 /* ================= SECTION ================= */
 section{
-    padding:70px 8%;
+    padding:80px 8%;
     max-width:1200px;
     margin:auto;
 }
 
 section h2{
-    font-size:28px;
+    font-size:30px;
     color:#1e3a8a;
-    margin-bottom:25px;
-}
-
-/* ================= ABOUT & SWARNIM HEADING ================= */
-
-.about-heading,
-.swarnim-heading{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    margin-bottom:25px;
-}
-
-.about-heading h2,
-.swarnim-heading h2{
-    margin:0;
-    font-size:28px;
-    color:#1e3a8a;
-    font-weight:600;
-}
-
-.about-logo,
-.swarnim-logo{
-    width:65px;
-    height:auto;
+    text-align:center;
+    margin-bottom:50px;
 }
 
 /* ================= PARAGRAPH ================= */
 section p{
-    font-size:16px;
+    font-size:17px;
     line-height:1.8;
     margin-bottom:25px;
     text-align:justify;
+    text-align-last:left;
+}
+
+/* ================= OUR FACILITIES ================= */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);  /* 4 in one row */
+    gap:30px;
+}
+
+/* Card Design */
+.card{
+    background:white;
+    padding:30px 25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* Icon */
+.card i,
+.card .icon{
+    font-size:45px;
+    margin-bottom:18px;
+    color:#1e3a8a;
+}
+
+/* Card Heading */
+.card h3{
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+/* Card Text */
+.card p{
+    font-size:15px;
+    line-height:1.6;
+    text-align:center;
 }
 
 /* ================= VISION / MISSION ================= */
-
 .highlight{
     background:#e0f2fe;
-    padding:70px 8%;
+    padding:80px 8%;
 }
 
 .vm-container{
@@ -88,83 +112,56 @@ section p{
 .vm-box{
     background:white;
     padding:35px;
-    width:340px;
+    width:350px;
     border-radius:15px;
     box-shadow:0 8px 20px rgba(0,0,0,0.08);
     text-align:center;
-    transition:0.3s;
 }
+/* ===== Vision / Mission Text Improve ===== */
 
-.vm-box:hover{
-    transform:translateY(-5px);
-}
-
-.vm-icon i{
-    font-size:45px;
+.vm-box h3{
+    font-size:24px;
     color:#1e3a8a;
-    margin-bottom:15px;
-}
-
-.vm-box h2{
-    font-size:22px;
-    margin-bottom:15px;
-    color:#1e3a8a;
+    margin-bottom:18px;
+    font-weight:600;
 }
 
 .vm-box p{
     text-align:justify;
-    line-height:1.6;
+    text-align-last:left;
+    line-height:1.2;
 }
 
-/* ================= OUR FACILITIES ================= */
-
-.card-container{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
+.vm-box ul{
+    text-align:left;
+    margin-top:15px;
+    padding-left:22px;
 }
 
-.card{
-    background:white;
-    padding:30px 20px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    text-align:center;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card i{
-    font-size:40px;
-    margin-bottom:15px;
-    color:#1e3a8a;
-}
-
-.card h3{
-    font-size:18px;
+.vm-box ul li{
+    font-size:16px;
+    line-height:1.8;
     margin-bottom:10px;
-}
-
-.card p{
-    font-size:14px;
-    text-align:center;
+    color:#555;
 }
 
 /* ================= FOOTER ================= */
-
 footer{
     background:#111827;
     color:white;
-    padding:50px 8%;
-    margin-top:50px;
+    padding:60px 8%;
+    margin-top:60px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
 }
 
 .footer-bottom{
     text-align:center;
-    margin-top:20px;
+    margin-top:30px;
     padding-top:15px;
     border-top:1px solid #444;
     font-size:14px;
@@ -182,18 +179,33 @@ footer{
 
 /* Mobile */
 @media (max-width:600px){
-
     section{
-        padding:50px 6%;
+        padding:60px 6%;
     }
 
     .card-container{
         grid-template-columns:1fr;
     }
+}
+/* ================= LOGO SIZE FIX ================= */
 
-    .about-heading,
-    .swarnim-heading{
-        flex-direction:column;
-        text-align:center;
-    }
+.about-heading,
+.swarnim-heading{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.about-logo,
+.swarnim-logo{
+    width:80px;   /* 👈 yaha size control hota hai */
+    height:auto;
+
+}
+.vm-icon i{
+    font-size:50px;   /* 👈 yaha se size control hoga */
+    color:#1e3a8a;
+        text-align:center;     /* 👈 icon center karega */
+
 }
