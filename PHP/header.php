@@ -30,7 +30,7 @@
                 <li><a href="/PHP/about.php">About</a></li>
                 <li><a href="/PHP/contact.php">Contact US</a></li>
             </ul>
-
+            <a href="#" class="apply-btn">Apply Now</a>
         </div>
     </nav>
     <!-- Navbar section ends -->

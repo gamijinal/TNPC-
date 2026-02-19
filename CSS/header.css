@@ -1,3 +1,6 @@
+
+
+
 /* =======================
    NAVBAR
 ======================= */
@@ -76,4 +79,20 @@
     width: 100%;
 }
 
+.apply-btn {
+    background: linear-gradient(135deg, #ff9900, #ff7a00);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 15px rgba(255, 140, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.apply-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.6);
+}
 

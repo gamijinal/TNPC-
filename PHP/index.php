@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="/CSS/index.css">
     <title>Home</title>
 </head>
+
 <body>
     <?php include 'header.php'; ?>
 
@@ -64,46 +66,31 @@
             <h2>Latest News & Updates</h2>
             <p>Stay updated with our latest announcements and activities</p>
         </div>
+        <div class="news_card">
+            <div class="news_row">
 
-        <div class="news_container">
-
-            <div class="news_card">
                 <div class="news_image">
-                    <img src="/images/news1.jpg" alt="News 1">
-                    <!-- <span class="news_date">12 Feb 2026</span> -->
+                    <img src="images/news1.jpg" alt="News">
                 </div>
-                <div class="news_content">
-                    <h3>Annual Cultural Fest 2026</h3>
-                    <p>Our college successfully organized the Annual Cultural Fest with great enthusiasm and student participation.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
 
-            <div class="news_card">
+                <h3 class="news_title">Annual Cultural Fest 2026</h3>
+
+                <a href="#" class="read_btn">Read More</a>
+
+            </div>
+            <div class="news_row">
+
                 <div class="news_image">
-                    <img src="/images/news2.jpg" alt="News 2">
-                    <!-- <span class="news_date">05 Feb 2026</span> -->
+                    <img src="images/news1.jpg" alt="News">
                 </div>
-                <div class="news_content">
-                    <h3>Guest Lecture on AI & Technology</h3>
-                    <!-- <p>Industry experts delivered an insightful session on Artificial Intelligence and emerging technologies.</p> -->
-                    <a href="#">Read More</a>
-                </div>
-            </div>
 
-            <div class="news_card">
-                <div class="news_image">
-                    <img src="/images/news3.jpg" alt="News 3">
-                    <!-- <span class="news_date">28 Jan 2026</span> -->
-                </div>
-                <div class="news_content">
-                    <h3>Admissions Open 2026-27</h3>
-                    <!-- <p>Admissions are now open for BCA and BBA programs. Apply early to secure your seat.</p> -->
-                    <a href="#">Read More</a>
-                </div>
-            </div>
+                <h3 class="news_title">Annual Cultural Fest 2026</h3>
 
+                <a href="#" class="read_btn">Read More</a>
+
+            </div>
         </div>
+
     </section>
     <!-- News section ends -->
 
