@@ -194,13 +194,16 @@ footer{
     display:flex;
     align-items:center;
     gap:12px;
-    margin-bottom:25px;
+    margin:0;           
+
+
 }
 
 .about-logo,
 .swarnim-logo{
     width:80px;   /* 👈 yaha size control hota hai */
     height:auto;
+    display: block;   /* inline spacing remove */
 
 }
 .vm-icon i{
@@ -208,4 +211,7 @@ footer{
     color:#1e3a8a;
         text-align:center;     /* 👈 icon center karega */
 
+}
+.about-heading h2,.swarnim-heading h2{
+    margin: 0;   /* 👈 default top margin hata do */
 }
