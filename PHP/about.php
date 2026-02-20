@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 <?php
 include 'header.php';
 ?>
-=======
->>>>>>> 1d2d28028200c48a3d577ebd1993485d90554127
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +20,6 @@ include 'header.php';
 
 <header>
     <h1>ABOUT US</h1>
-    <p>The New Progressive College of Computer & Management Studies</p>
 </header>
 
 
@@ -32,19 +28,22 @@ include 'header.php';
 <section>
 
     <div class="about-heading">
-        <img src="../images/tnpc_logo.png" alt="TNPC Logo" class="about-logo">
-        <h2>About US</h2>
+        <img src="../images/tnpc_logo.png" alt="TNPC Logo" class="about-logo"><h2>About US</h2>
+        
     </div>
 
     <p>
-        The New Progressive College of Computer & Management Studies (TNPC) is a leading
-        institutionin Mehsana,known for excellence in edducation and innovation.we
-        provide a dynamic learning environment with modern technology and a focus on
-        overall growth to prepare future leaders.
-        our campus offers advanced Facilities that encourage curiosity,teamwork,and
-        creativity.with experienced faculty and a blend of tradition and modern learning
-        we Ensure students are ready to succeed in today's fast changing world.
-    </p>
+        About Our College
+
+With over 91 years of educational excellence in Mehsana, our institution is affiliated with Gujarat Technological University (GTU) and committed to delivering quality education with modern facilities.
+
+We offer career-focused programs like BCA and BBA, along with placement assistance, internship opportunities, and professional skill development. Our campus includes a well-equipped library and air-conditioned computer labs with internet access.
+
+Special training in soft skills, communication, leadership, and guidance for competitive exams like UPSC, GPSC, and IBPS ensures the overall development and career readiness of our students.During vacation periods, students are provided special CCC computer course facilities.
+Along with academic excellence, students are also given professional training with Placement Assistance and Internship Opportunities.
+
+
+</p>
        
 </section>
 
@@ -143,44 +142,16 @@ include 'header.php';
 
 </section>
 <!-- ================= FOOTER ================= -->
-<<<<<<< HEAD
 
-<!-- <footer>
-=======
-<footer>
->>>>>>> 1d2d28028200c48a3d577ebd1993485d90554127
-
-    <div class="footer-grid">
-
-        <div>
-            <h3>TNPC College</h3>
-            <p>Computer & Management Studies</p>
-        </div>
-
-        <div>
-            <h3>Contact</h3>
-            <p>Email: info@tnpc.edu</p>
-            <p>Phone: +91 XXXXX XXXXX</p>
-        </div>
-
-        <div>
-            <h3>Quick Links</h3>
-            <p>Home</p>
-            <p>Courses</p>
-            <p>Admission</p>
-            <p>Contact</p>
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-        © <?php echo date("Y"); ?> TNPC College. All Rights Reserved.
-    </div>
-
-</footer> -->
 
 <?php
 include 'footer.php';
 ?>
+
+
+
+
+
+
 </body>
 </html>
