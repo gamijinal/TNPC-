@@ -44,7 +44,7 @@
                     The Bachelor of Computer Applications (BCA) focuses on programming,
                     database management, web development, and software technologies.
                 </p>
-                <a href="#">Read More</a>
+                <button class="btn" name="read_more_btn">Read More</button>
             </div>
 
             <div class="course_card">
@@ -53,7 +53,7 @@
                     The Bachelor of Business Administration (BBA) develops leadership,
                     management, marketing, and entrepreneurial skills.
                 </p>
-                <a href="#">Read More</a>
+                <button class="btn" name="read_more_btn">Read More</button>
             </div>
         </div>
 
@@ -75,7 +75,7 @@
 
                 <h3 class="news_title">Annual Cultural Fest 2026</h3>
 
-                <a href="#" class="read_btn">Read More</a>
+                <a href="#" class="btn">Read More</a>
 
             </div>
             <div class="news_row">
