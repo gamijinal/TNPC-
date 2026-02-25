@@ -4,98 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/index.css">
-    <title>Home</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <title>HOME</title>
 </head>
 
 <body>
     <?php include 'header.php'; ?>
 
-    <!-- Banner section starts -->
-    <section class="slider">
-        <div class="slides">
-            <img src="/images/1.jpg" class="slide" alt="Slide 1">
-            <img src="/images/2.jpg" class="slide" alt="Slide 2">
-            <img src="/images/3.jpg" class="slide" alt="Slide 3">
-        </div>
-        <!-- Dots -->
-        <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </section>
-    <!-- Banner section ends -->
+    <section class="hero-slider">
+        <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-    <!-- Course Overview section starts -->
-    <section class="course_section">
-
-        <div class="section_title">
-            <h2>Our Programs</h2>
-            <p>Explore our professional undergraduate courses</p>
-        </div>
-
-        <div class="course_overview">
-            <div class="course_card">
-                <h3>BCA</h3>
-                <p>
-                    The Bachelor of Computer Applications (BCA) focuses on programming,
-                    database management, web development, and software technologies.
-                </p>
-                <button class="btn" name="read_more_btn">Read More</button>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
             </div>
 
-            <div class="course_card">
-                <h3>BBA</h3>
-                <p>
-                    The Bachelor of Business Administration (BBA) develops leadership,
-                    management, marketing, and entrepreneurial skills.
-                </p>
-                <button class="btn" name="read_more_btn">Read More</button>
-            </div>
-        </div>
+            <!-- Slides -->
+            <div class="carousel-inner">
 
-    </section>
-    <!-- Course Overview section ends -->
-
-    <!-- News section starts -->
-    <section class="news_section">
-        <div class="section_title">
-            <h2>Latest News & Updates</h2>
-            <p>Stay updated with our latest announcements and activities</p>
-        </div>
-        <div class="news_card">
-            <div class="news_row">
-
-                <div class="news_image">
-                    <img src="images/news1.jpg" alt="News">
+                <div class="carousel-item active">
+                    <img src="/images/1.jpg" class="d-block w-100 hero-img" alt="Slide 1">
                 </div>
 
-                <h3 class="news_title">Annual Cultural Fest 2026</h3>
-
-                <a href="#" class="btn">Read More</a>
-
-            </div>
-            <div class="news_row">
-
-                <div class="news_image">
-                    <img src="images/news1.jpg" alt="News">
+                <div class="carousel-item">
+                    <img src="/images/2.jpg" class="d-block w-100 hero-img" alt="Slide 2">
                 </div>
 
-                <h3 class="news_title">Annual Cultural Fest 2026</h3>
+                <div class="carousel-item">
+                    <img src="/images/3.jpg" class="d-block w-100 hero-img" alt="Slide 3">
+                </div>
 
-                <a href="#" class="read_btn">Read More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Course section starts -->
+    <section class="course-section py-5">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5 section-heading">
+                <span class="sub-title">OUR COURSES</span>
+                <h2>Discover Your Path to Success</h2>
+                <p>
+                    Our industry-linked programs are designed in collaboration with experts
+                    to match current market demands. Choose the path that shapes your career.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- BCA Card -->
+                <div class="col-lg-6">
+                    <div class="course-card">
+
+                        <div class="course-img blue-overlay">
+                            <i class="bi bi-display"></i>
+                        </div>
+
+                        <div class="course-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3>BCA</h3>
+                                <span class="duration-badge blue-badge">3 Years / 6 Sem</span>
+                            </div>
+
+                            <h5>Bachelor of Computer Applications</h5>
+                            <p>
+                                Build the tech future. A degree focused on programming,
+                                app development, AI, cybersecurity, and cloud computing.
+                            </p>
+
+                            <ul>
+                                <li>Web & Mobile Dev (HTML, PHP, Android)</li>
+                                <li>Programming (C, C++, Java, Python)</li>
+                                <li>Database & Cloud Infrastructure</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BBA Card -->
+                <div class="col-lg-6">
+                    <div class="course-card">
+
+                        <div class="course-img orange-overlay">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+
+                        <div class="course-content">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3>BBA</h3>
+                                <span class="duration-badge orange-badge">3 Years / 6 Sem</span>
+                            </div>
+
+                            <h5>Bachelor of Business Administration</h5>
+                            <p>
+                                Lead the business world. Equip yourself with knowledge
+                                and leadership skills to stand out in corporate life.
+                            </p>
+
+                            <ul>
+                                <li>Marketing & Finance Strategies</li>
+                                <li>Entrepreneurship & Startup Skills</li>
+                                <li>Soft Skills & Corporate Leadership</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
         </div>
-
     </section>
-    <!-- News section ends -->
 
-    <script src="../JS/index.js"></script>
     <?php include 'footer.php'; ?>
-</body>
+    <!-- <script src="bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+</body>
 </html>

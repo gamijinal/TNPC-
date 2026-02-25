@@ -1,45 +1,69 @@
-
-
-/* =======================
-   FOOTER
-======================= */
-.footer {
-    background:var(--primary_color);
-    color: #fff;
-    padding-top: 60px;
-}
-
-.footer_container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.footer_col h3,
-.footer_col h4 {
-    margin-bottom: 20px;
-}
-
-.footer_col p,
-.footer_col a {
-    font-size: 14px;
+.footer-section {
+    background: var(--primary_color);
     color: #ddd;
-    margin-bottom: 10px;
-    display: block;
 }
 
-.footer_col a:hover {
+.footer-title {
     color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-heading {
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.trust-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--secondary_color);
     padding-left: 5px;
 }
 
-.footer_bottom {
-    text-align: center;
-    padding: 20px;
-    background:var(--secondary_color);
-    margin-top: 40px;
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 10px;
     font-size: 14px;
+}
+
+.footer-contact i {
+    color: var(--secondary_color);
+    margin-right: 8px;
+}
+
+.footer-divider {
+    border-color: rgba(255,255,255,0.2);
+    margin: 30px 0;
 }
