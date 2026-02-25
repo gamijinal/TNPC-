@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+
     <title>HOME</title>
 </head>
 
@@ -131,9 +133,87 @@
         </div>
     </section>
 
+    <!-- news and updation seciton  -->
+    <section class="news-section py-5">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5 section-heading">
+                <span class="sub-title">NEWS & UPDATES</span>
+                <h2>Stay Informed, Stay Ahead</h2>
+                <p>
+                    Explore the latest events, achievements, campus activities,
+                    and important announcements from our college community.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-6">
+                    <div class="news-card d-flex">
+                        <div class="news-img">
+                            <img src="/images/1.jpg" alt="">
+                        </div>
+                        <div class="news-content">
+                            <h4>Education Your Way</h4>
+                            <p>There’s only one required course for undergraduates.</p>
+                            <a href="#" class="read-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-6">
+                    <div class="news-card d-flex">
+                        <div class="news-img">
+                            <img src="/images/2.jpg" alt="">
+                        </div>
+                        <div class="news-content">
+                            <h4>Research is in Our DNA</h4>
+                            <p>Students and faculty collaborate to make discoveries.</p>
+                            <a href="#" class="read-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-6">
+                    <div class="news-card d-flex">
+                        <div class="news-img">
+                            <img src="/images/3.jpg" alt="">
+                        </div>
+                        <div class="news-content">
+                            <h4>The City We Call Home</h4>
+                            <p>We’re nestled between the river and downtown life.</p>
+                            <a href="#" class="read-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-6">
+                    <div class="news-card d-flex">
+                        <div class="news-img">
+                            <img src="/images/4.jpg" alt="">
+                        </div>
+                        <div class="news-content">
+                            <h4>Amazing Value</h4>
+                            <p>Top rankings based on quality education and value.</p>
+                            <a href="#" class="read-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
     <?php include 'footer.php'; ?>
     <!-- <script src="bootstrap.bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
