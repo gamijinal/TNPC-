@@ -23,17 +23,17 @@
 <body>
     <?php include 'header.php'; ?>
 
-    <section class="hero-slider">
+    <!-- <section class="hero-slider">
         <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-            <!-- Indicators -->
+            <!-- Indicators --
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
             </div>
 
-            <!-- Slides -->
+            <!-- Slides --
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
@@ -51,6 +51,57 @@
             </div>
 
         </div>
+    </section> -->
+    <section class="hero-slider">
+
+        <div id="mainHeroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainHeroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#mainHeroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#mainHeroCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-slide slide1">
+                        <div class="hero-content">
+                            <h1>Welcome to Our College</h1>
+                            <p>Empowering Future Leaders</p>
+                            <a href="#" class="custom-btn">Explore Courses</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-slide slide2">
+                        <div class="hero-content">
+                            <h1>Admission Open 2026-27</h1>
+                            <p>BCA & BBA Programs</p>
+                            <a href="#" class="custom-btn">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero-slide slide3">
+                        <div class="hero-content">
+                            <h1>Annual Tech Fest 2026</h1>
+                            <p>A Grand Success Event</p>
+                            <a href="#" class="custom-btn">View Gallery</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
     <!-- Course section starts -->
