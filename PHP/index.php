@@ -212,8 +212,7 @@
                         <div class="news-img">
                             <img src="/images/1.jpg" alt="">
                         </div>
-                        <div class="news-content">
-                            <h4>Education Your Way</h4>
+                               <h4>Education Your Way</h4>
                             <p>There’s only one required course for undergraduates.</p>
                             <a href="#" class="read-btn">Read More</a>
                         </div>
