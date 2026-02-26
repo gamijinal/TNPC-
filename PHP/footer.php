@@ -47,7 +47,6 @@
                     <li><i class="bi bi-envelope-fill"></i> info@thenewprogressivecollege.ac.in</li>
                 </ul>
             </div>
-
         </div>
 
         <hr class="footer-divider">

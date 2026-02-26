@@ -94,6 +94,9 @@
                                 <li>Programming (C, C++, Java, Python)</li>
                                 <li>Database & Cloud Infrastructure</li>
                             </ul>
+                            <a href="bca.php" class="course-btn">
+                                View More Details
+                            </a>
                         </div>
 
                     </div>
@@ -124,6 +127,9 @@
                                 <li>Entrepreneurship & Startup Skills</li>
                                 <li>Soft Skills & Corporate Leadership</li>
                             </ul>
+                            <a href="bba.php" class="course-btn">
+                                View More Details
+                            </a>
                         </div>
 
                     </div>
@@ -204,15 +210,41 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
 
+    <!-- Admission Popup Modal -->
+    <div class="modal fade" id="admissionModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 position-relative">
+
+                <!-- Close Button -->
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <!-- Banner Image -->
+                <img src="../images/add.png" alt="Admission Open 2026-27" class="img-fluid rounded">
+
+            </div>
+        </div>
+    </div>
     <?php include 'footer.php'; ?>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var admissionModal = new bootstrap.Modal(document.getElementById('admissionModal'));
+            admissionModal.show();
+        });
+    </script>
+
+
     <!-- <script src="bootstrap.bundle.min.js"></script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 
