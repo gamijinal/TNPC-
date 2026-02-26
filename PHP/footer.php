@@ -42,7 +42,7 @@
             <div class="col-md-6 col-lg-3">
                 <h5 class="footer-heading">Contact Us</h5>
                 <ul class="footer-contact">
-                    <li><i class="bi bi-geo-alt-fill"></i> Mehsana, Gujarat, India</li>
+                    <li><i class="bi bi-geo-alt-fill"></i> Pooja Building, Near Saradar Patel Stadium, New District Court Road, Mehsana -384001</li>
                     <li><i class="bi bi-telephone-fill"></i> +91 93775 77596</li>
                     <li><i class="bi bi-envelope-fill"></i> info@thenewprogressivecollege.ac.in</li>
                 </ul>
