@@ -26,7 +26,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/PHP/course.php">Course</a>
+                        <a class="nav-link" href="#coursse">Course</a>
                     </li>
 
                     <li class="nav-item">
