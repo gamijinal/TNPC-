@@ -69,9 +69,9 @@
                 <div class="carousel-item active">
                     <div class="hero-slide slide1">
                         <div class="hero-content">
-                            <h1>Welcome to Our College</h1>
-                            <p>Empowering Future Leaders</p>
-                            <a href="#" class="custom-btn">Explore Courses</a>
+                            <h1>Welcome to TNPC</h1>
+                            <p>Empowering students with knowledge, innovation and leadership.</p>
+                            <a href="about.php" class="custom-btn">Explore Courses</a>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                     <div class="hero-slide slide2">
                         <div class="hero-content">
                             <h1>Admission Open 2026-27</h1>
-                            <p>BCA & BBA Programs</p>
+                            <p>Enroll now for BCA & BBA programs with placement assistance.</p>
                             <a href="#" class="custom-btn">Apply Now</a>
                         </div>
                     </div>

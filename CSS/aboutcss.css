@@ -1,217 +1,68 @@
-/* ================= GLOBAL RESET ================= */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+/* .about-page {
+    background: #f4f6f9;
+} */
+
+
+/* Hero */
+.about-hero {
+    background: #1e3a8a;
+    color: #fff;
 }
 
-body{
-    background:#f4f6f9;
-    color:#333;
-    line-height:1.7;
+.about-hero h1 {
+    font-size: 32px;
+    margin: 0;
 }
 
-/* ================= HEADER ================= */
-header{
-    background:#1e3a8a;
-    color:white;
-    text-align:center;
-        padding:15px 20px;   /* pehle 40px tha, ab kam kar diya */
-
+/* Logos */
+.about-logo {
+    width: 70px;
 }
 
-header h1{
-    font-size:36px;
-    margin-bottom:12px;
+/* Paragraph */
+.about-text {
+    line-height: 1.8;
+    text-align: justify;
 }
 
-header p{
-    font-size:18px;
-    opacity:0.9;
+/* Highlight */
+.highlight-section {
+    background: #e0f2fe;
 }
 
-/* ================= SECTION ================= */
-section{
-    padding:80px 8%;
-    max-width:1200px;
-    margin:auto;
+/* Vision/Mission */
+.vm-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
 }
 
-section h2{
-    font-size:30px;
-    color:#1e3a8a;
-    text-align:center;
-    margin-bottom:50px;
+.vm-box:hover {
+    transform: translateY(-6px);
 }
 
-/* ================= PARAGRAPH ================= */
-section p{
-    font-size:17px;
-    line-height:1.8;
-    margin-bottom:25px;
-    text-align:justify;
-    text-align-last:left;
+.vm-icon i {
+    font-size: 45px;
+    color: #1e3a8a;
 }
 
-/* ================= OUR FACILITIES ================= */
-.card-container{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);  /* 4 in one row */
-    gap:30px;
+/* Facilities */
+.facility-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
 }
 
-/* Card Design */
-.card{
-    background:white;
-    padding:30px 25px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    text-align:center;
-    transition:0.3s ease;
+.facility-card:hover {
+    transform: translateY(-6px);
 }
 
-.card:hover{
-    transform:translateY(-8px);
-}
-
-/* Icon */
-.card i,
-.card .icon{
-    font-size:45px;
-    margin-bottom:18px;
-    color:#1e3a8a;
-}
-
-/* Card Heading */
-.card h3{
-    font-size:20px;
-    margin-bottom:12px;
-}
-
-/* Card Text */
-.card p{
-    font-size:15px;
-    line-height:1.6;
-    text-align:center;
-}
-
-/* ================= VISION / MISSION ================= */
-.highlight{
-    background:#e0f2fe;
-    padding:80px 8%;
-}
-
-.vm-container{
-    display:flex;
-    gap:30px;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-.vm-box{
-    background:white;
-    padding:35px;
-    width:350px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
-    text-align:center;
-}
-/* ===== Vision / Mission Text Improve ===== */
-
-.vm-box h3{
-    font-size:24px;
-    color:#1e3a8a;
-    margin-bottom:18px;
-    font-weight:600;
-}
-
-.vm-box p{
-    text-align:justify;
-    text-align-last:left;
-    line-height:1.2;
-}
-
-.vm-box ul{
-    text-align:left;
-    margin-top:15px;
-    padding-left:22px;
-}
-
-.vm-box ul li{
-    font-size:16px;
-    line-height:1.8;
-    margin-bottom:10px;
-    color:#555;
-}
-
-/* ================= FOOTER ================= */
-footer{
-    background:#111827;
-    color:white;
-    padding:60px 8%;
-    margin-top:60px;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:30px;
-}
-
-.footer-bottom{
-    text-align:center;
-    margin-top:30px;
-    padding-top:15px;
-    border-top:1px solid #444;
-    font-size:14px;
-    opacity:0.8;
-}
-
-/* ================= RESPONSIVE ================= */
-
-/* Tablet */
-@media (max-width:992px){
-    .card-container{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-/* Mobile */
-@media (max-width:600px){
-    section{
-        padding:60px 6%;
-    }
-
-    .card-container{
-        grid-template-columns:1fr;
-    }
-}
-/* ================= LOGO SIZE FIX ================= */
-
-.about-heading,
-.swarnim-heading{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin:0;           
-
-
-}
-
-.about-logo,
-.swarnim-logo{
-    width:80px;   /* 👈 yaha size control hota hai */
-    height:auto;
-    display: block;   /* inline spacing remove */
-
-}
-.vm-icon i{
-    font-size:50px;   /* 👈 yaha se size control hoga */
-    color:#1e3a8a;
-        text-align:center;     /* 👈 icon center karega */
-
-}
-.about-heading h2,.swarnim-heading h2{
-    margin: 0;   /* 👈 default top margin hata do */
+.facility-card .icon {
+    font-size: 40px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
 }
