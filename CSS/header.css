@@ -27,6 +27,7 @@
     width: auto;             
 }
 
+
 .nav-link::after {
     content: "";
     width: 0;
@@ -34,7 +35,7 @@
     background: var(--secondary_color);
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -4px;
     transition: width 0.3s ease;
 }
 

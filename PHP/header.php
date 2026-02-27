@@ -1,20 +1,6 @@
-<<<<<<< HEAD
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg sticky-top nav_bar">
         <div class="container-fluid px-4">
-=======
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/header.css">
-    <title>Document</title>
-
-    <!-- Navbar section starts -->
-    <nav class="nav_bar">
-        <div class="nav_container">
->>>>>>> e93b975 (Your message)
 
             <!-- Logo Section -->
             <a class="navbar-brand d-flex align-items-center gap-3" href="#">
@@ -39,10 +25,29 @@
                         <a class="nav-link" href="/PHP/index.php">Home</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/PHP/course.php">Course</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active"
+                        href="href="javascript:void(0);
+                        id="courseDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                         Courses
+                    </a>
 
+                    <ul class="dropdown-menu" aria-labelledby="courseDropdown">
+                        <li>
+                            <a class="dropdown-item" href="/PHP/bca.php">
+                             BCA
+                            </a>
+                        </li>
+                        <li>
+                             <a class="dropdown-item" href="/PHP/bba.php">
+                                BBA
+                            </a>
+                              </li>
+                          </ul>
+                        </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#admission">Admission</a>
                     </li>
@@ -69,21 +74,6 @@
                 </ul>
             </div>
 
-<<<<<<< HEAD
         </div>
     </nav>
     <!-- Navbar End -->
-=======
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="/PHP/course.php">Course</a></li>
-                <li><a href="#admission">Admission</a></li>
-                <li><a href="#student">Student</a></li>
-                <li><a href="/PHP/about.php">About</a></li>
-                <li><a href="/PHP/contact.php">Contact US</a></li>
-            </ul>
-            <a href="#" class="apply-btn">Apply Now</a> 
-        </div>
-    </nav>
-    <!-- Navbar section ends -->
->>>>>>> e93b975 (Your message)
