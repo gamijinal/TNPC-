@@ -121,7 +121,7 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-git add .md-4">
             <div class="subject-card">
                 <i class="bi bi-shield-lock"></i>
                 <h5>Cyber Security</h5>
