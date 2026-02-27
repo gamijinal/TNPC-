@@ -204,15 +204,16 @@
                 </p>
             </div>
 
-            <div class="row g-4">
+            <div class="row">
 
                 <!-- Card 1 -->
-                <div class="col-lg-6">
+                <div class="col-md-6 mb-4">
                     <div class="news-card d-flex">
                         <div class="news-img">
                             <img src="/images/1.jpg" alt="">
                         </div>
-                               <h4>Education Your Way</h4>
+                        <div class="news-content">
+                            <h4>Education Your Way</h4>
                             <p>There’s only one required course for undergraduates.</p>
                             <a href="#" class="read-btn">Read More</a>
                         </div>
@@ -220,7 +221,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-lg-6">
+                <div class="col-md-6 mb-4">
                     <div class="news-card d-flex">
                         <div class="news-img">
                             <img src="/images/2.jpg" alt="">
@@ -234,7 +235,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-lg-6">
+                <div class="col-md-6 mb-4">
                     <div class="news-card d-flex">
                         <div class="news-img">
                             <img src="/images/3.jpg" alt="">
@@ -248,7 +249,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-lg-6">
+                <div class="col-md-6 mb-4">
                     <div class="news-card d-flex">
                         <div class="news-img">
                             <img src="/images/4.jpg" alt="">
@@ -260,6 +261,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
