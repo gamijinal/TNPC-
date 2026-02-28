@@ -1,0 +1,79 @@
+.bba-banner {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('../images/2.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.bba-banner h1 {
+    font-weight: 700;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.download-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.download-card i {
+    font-size: 40px;
+    color: #dc3545;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.download-card:hover {
+    background: #f1f7ff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}.info-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    height: 100%;              /* IMPORTANT */
+    display: flex;             /* IMPORTANT */
+    flex-direction: column;    /* IMPORTANT */
+    justify-content: center;   /* IMPORTANT */
+    text-align: center;
+}
+
+.info-box i {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+.subject-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.subject-card:hover {
+    transform: translateY(-8px);
+}
+
+.subject-card i {
+    font-size: 35px;
+    color: #198754; /* Green shade for BBA */
+    margin-bottom: 10px;
+}

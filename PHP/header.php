@@ -29,6 +29,19 @@
                         <a class="nav-link" href="#coursse">Course</a>
                     </li>
 
+                    <ul class="dropdown-menu" aria-labelledby="courseDropdown">
+                        <li>
+                            <a class="dropdown-item" href="/PHP/bca.php">
+                             BCA
+                            </a>
+                        </li>
+                        <li>
+                             <a class="dropdown-item" href="/PHP/bba.php">
+                                BBA
+                            </a>
+                              </li>
+                          </ul>
+                        </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#admission">Admission</a>
                     </li>
