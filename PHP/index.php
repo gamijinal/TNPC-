@@ -22,7 +22,7 @@
 
 <body>
     <?php include 'header.php'; ?>
-
+    <a href="enquiry.php" class="enquiry-btn">Enquire Now</a>
     <!-- <section class="hero-slider">
         <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
@@ -71,7 +71,7 @@
                         <div class="hero-content">
                             <h1>Welcome to TNPC</h1>
                             <p>Empowering students with knowledge, innovation and leadership.</p>
-                            <a href="about.php" class="custom-btn">Explore Courses</a>
+                            <a href="about.php" class="custom-btn">Explore More</a>
                         </div>
                     </div>
                 </div>
@@ -263,6 +263,11 @@
                 </div>
 
             </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="news.php" class="news-btn">
+                View All News & Updates
+            </a>
         </div>
     </section>
 
