@@ -177,13 +177,15 @@
 
         <!-- Buttons -->
         <div class="text-center mt-5">
-            <a href="inquiry.php" class="btn btn-primary btn-lg me-2">
+            <a href="inquiry_submit.php" class="btn btn-primary btn-lg me-2">
                 Inquiry Now
             </a>
-            <a href="https://admissions.gtu.ac.in/" target="_blank"
+              <a href="https://gcasadmin.gujgov.edu.in/" 
+               target="_blank"
                class="btn btn-success btn-lg">
                Apply Now
             </a>
+        
         </div>
 
     </div>

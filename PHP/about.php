@@ -58,8 +58,8 @@
                 </div>
                 <h2>Our Vision</h2>
                 <p>
-                    To Empower studens with
-                    knowledge and values,shapping them
+                    To Empower students with
+                    knowledge and values,shaping them
                     into confident leaders for a dynamic world.
                 </p>
             </div>
@@ -89,7 +89,7 @@
         </div>
 
         <p>
-            Swarrnim India Charitable Foundation is a reputed non-profit(section 8)company having
+            Swarnim India Charitable Foundation is a reputed non-profit(section 8)company having
             its basic instinct to cater student community by providing the best technology
             education and Management education with the help of experts.
             we have a team OF experts having knowledge on web and Mobile app

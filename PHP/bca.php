@@ -37,15 +37,14 @@
         <div class="text-center mb-5">
             <h2 class="section-title">Course Overview</h2>
             <p class="w-75 mx-auto">
-                BCA is a 3-year undergraduate program focused on
-                programming, database management, AI, cybersecurity,
+                BCA is a 3-year undergraduate program focused on programming,
+                database management, artificial intelligence, cybersecurity,
                 and full-stack development.
             </p>
         </div>
 
         <!-- Info Boxes -->
-        <!--<div class="row text-center g-4 mb-5"> -->
-            <div class="row text-center g-4 mb-5 align-items-stretch">
+        <div class="row text-center g-4 mb-5 align-items-stretch">
 
             <div class="col-md-3">
                 <div class="info-box">
@@ -59,7 +58,7 @@
                 <div class="info-box">
                     <i class="bi bi-mortarboard"></i>
                     <h5>Eligibility</h5>
-                    <p>12th Pass Mathematics,Statistics,Computer (Any Stream)</p>
+                    <p>12th Pass (Mathematics / Statistics / Computer – Any Stream)</p>
                 </div>
             </div>
 
@@ -83,68 +82,67 @@
 
         <!-- Subjects -->
         <div class="mb-5">
-            <!-- Subjects -->
-<div class="mb-5">
-    <h2 class="section-title text-center mb-4">Major Subjects</h2>
+            <h2 class="section-title text-center mb-4">Major Subjects</h2>
 
-    <div class="row g-4">
+            <div class="row g-4">
 
-        <div class="col-md-4">
-            <div class="subject-card">
-                <i class="bi bi-code-slash"></i>
-                <h5>Programming</h5>
-                <p>C, C++, Java, Python</p>
+                <div class="col-md-4">
+                    <div class="subject-card">
+                        <i class="bi bi-code-slash"></i>
+                        <h5>Programming</h5>
+                        <p>C, C++, Java, Python</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="subject-card">
+                        <i class="bi bi-globe"></i>
+                        <h5>Web Development</h5>
+                        <p>HTML, CSS, PHP, JavaScript</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="subject-card">
+                        <i class="bi bi-database"></i>
+                        <h5>Database & Cloud</h5>
+                        <p>DBMS, Cloud Computing</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="subject-card">
+                        <i class="bi bi-cpu"></i>
+                        <h5>Artificial Intelligence</h5>
+                        <p>Machine Learning Basics</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="subject-card">
+                        <i class="bi bi-shield-lock"></i>
+                        <h5>Cyber Security</h5>
+                        <p>Network & Data Protection</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="subject-card">
+                        <i class="bi bi-phone"></i>
+                        <h5>Mobile App Development</h5>
+                        <p>Android & Mobile App Development Basics</p>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="subject-card">
-                <i class="bi bi-globe"></i>
-                <h5>Web Development</h5>
-                <p>HTML, CSS, PHP, JavaScript</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="subject-card">
-                <i class="bi bi-database"></i>
-                <h5>Database & Cloud</h5>
-                <p>DBMS, Cloud Computing</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="subject-card">
-                <i class="bi bi-cpu"></i>
-                <h5>Artificial Intelligence</h5>
-                <p>Machine Learning Basics</p>
-            </div>
-        </div>
-
-        <div class="col-git add .md-4">
-            <div class="subject-card">
-                <i class="bi bi-shield-lock"></i>
-                <h5>Cyber Security</h5>
-                <p>Network & Data Protection</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-    <div class="subject-card">
-        <i class="bi bi-phone"></i>
-        <h5>Mobile App Development</h5>
-        <p>Android & App Development Basics</p>
-    </div>
-</div>
-    </div>
-</div>
         </div>
 
         <!-- Career -->
         <div class="text-center mb-5">
             <h2 class="section-title">Career Opportunities</h2>
             <p>
-                Software Developer | Web Developer |
-                Cloud Engineer | Cyber Security Analyst
+                Software Developer, Web Developer, Cloud Engineer,
+                Cyber Security Analyst, Mobile App Developer
             </p>
         </div>
 
@@ -160,7 +158,7 @@
                     <i class="bi bi-file-earmark-pdf"></i>
                     <h5>BCA Syllabus</h5>
                     <a href="../PHP/SYLLABUS.php" class="btn btn-danger">
-                    Download Syllabus
+                        Download Syllabus
                     </a>
                 </div>
             </div>
@@ -179,10 +177,12 @@
 
         <!-- Buttons -->
         <div class="text-center mt-5">
-            <a href="inquiry.php" class="btn btn-primary btn-lg me-2">
+            <a href="inquiry_submit.php" class="btn btn-primary btn-lg me-2">
                 Inquiry Now
             </a>
-            <a href="https://admissions.gtu.ac.in/" target="_blank"
+
+            <a href="https://gcasadmin.gujgov.edu.in/" 
+               target="_blank"
                class="btn btn-success btn-lg">
                Apply Now
             </a>

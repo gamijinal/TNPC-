@@ -163,6 +163,8 @@ text-align:justify;       /* 👈 ye change karo */
     word-spacing: normal;
     color: #444;
     text-align:left;
+        text-align: justify;  /* Justify text for paragraphs */
+
 
 }
 
