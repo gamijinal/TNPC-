@@ -25,23 +25,25 @@
                         <a class="nav-link" href="/PHP/index.php">Home</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#coursse">Course</a>
-                    </li>
+                   <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" 
+       id="courseDropdown" 
+       role="button" 
+       data-bs-toggle="dropdown" 
+       aria-expanded="false">
+        Course
+    </a>
 
-                    <ul class="dropdown-menu" aria-labelledby="courseDropdown">
-                        <li>
-                            <a class="dropdown-item" href="/PHP/bca.php">
-                             BCA
-                            </a>
-                        </li>
-                        <li>
-                             <a class="dropdown-item" href="/PHP/bba.php">
-                                BBA
-                            </a>
-                              </li>
-                          </ul>
-                        </li>
+    <ul class="dropdown-menu" aria-labelledby="courseDropdown">
+        <li>
+            <a class="dropdown-item" href="/PHP/bca.php">BCA</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="/PHP/bba.php">BBA</a>
+        </li>
+    </ul>
+</li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#admission">Admission</a>
                     </li>
