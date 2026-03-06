@@ -22,7 +22,7 @@
 
 <body>
     <?php include 'header.php'; ?>
-    <a href="enquiry.php" class="enquiry-btn">Enquire Now</a>
+    <a href="inquiry_submit.php" class="enquiry-btn">Enquire Now</a>
     <!-- <section class="hero-slider">
         <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
