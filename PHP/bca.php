@@ -66,7 +66,7 @@
                 <div class="info-box">
                     <i class="bi bi-people"></i>
                     <h5>Intake</h5>
-                    <p>60 Students</p>
+                    <p>120 Students</p>
                 </div>
             </div>
 
@@ -147,29 +147,48 @@
         </div>
 
         <!-- Downloads -->
-        <div class="text-center mb-4">
-            <h2 class="section-title">Downloads</h2>
-        </div>
+          <!-- Downloads -->
+<section class="downloads-section py-5">
+<div class="container text-center">
 
-        <div class="row g-4">
+<h2 class="section-title">Downloads</h2>
 
-            <div class="col-md-6">
-                <div class="download-card text-center">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                    <h5>BCA Syllabus</h5>
-                    <a href="../PHP/SYLLABUS.php" class="btn btn-danger">
-                        Download Syllabus
-                    </a>
-                </div>
-            </div>
+<div class="row justify-content-center mt-4">
 
-            <div class="col-md-6">
-                <div class="download-card text-center">
-                    <i class="bi bi-file-earmark-text"></i>
-                    <h5>BCA Brochure</h5>
-                    <a href="pdfs/bca_brochure.pdf" download class="btn btn-primary">
-                        Download Brochure
-                    </a>
+<!-- SYLLABUS -->
+<div class="col-md-4">
+<div class="download-box">
+
+<div class="download-icon">
+    <i class="bi bi-file-earmark-pdf"></i>
+
+</div>
+
+<h4>BCA Syllabus</h4>
+
+<p>Download complete syllabus for BCA program.</p>
+
+<a href="../PHP/SYLLABUS.php" class="download-btn">
+Download Syllabus
+</a>
+
+</div>
+</div>
+
+<!-- BROCHURE -->
+<div class="col-md-4">
+<div class="download-box">
+
+<div class="download-icon"><i class="bi bi-journal-text"></i>
+</div>
+
+<h4> Brochure</h4>
+
+<p>Download official brochure with course details.</p>
+
+<a href="../PHP/BCA_BROCHURE.php" class="download-btn">
+Download Brochure
+</a>
                 </div>
             </div>
 

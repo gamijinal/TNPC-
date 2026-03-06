@@ -1,79 +1,323 @@
+/* ==========================
+   BANNER
+========================== */
 .bca-banner {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
                 url('../images/1.jpg') center/cover no-repeat;
-    height: 350px;
+    height: 400px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.bca-banner h1 { 
+    font-weight: 900;
+    font-size: 40px;
+    color: #fff;
+    z-index: 1;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+.bca-banner p { 
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-top: 10px;
+    z-index: 1;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+}
+.bca-banner::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
 }
 
-.bca-banner h1 {
-    font-weight: 700;
-}
-
+/* ==========================
+   SECTION TITLES
+========================== */
 .section-title {
-    font-weight: 700;
-    color: #0d6efd;
-    margin-bottom: 20px;
+    font-weight:700;
+    font-size: 34px;
+    color: var(--primary_color);
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+.section-title::after {
+    content:"";
+    width:70px;
+    height:4px;
+    background: linear-gradient(90deg,#0d6efd,#4facfe);
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    border-radius:10px;
 }
 
+/* ==========================
+   OVERVIEW TEXT
+========================== */
+.overview-text,
+.section-title + p {
+    font-size:20px;
+    line-height:1.8;
+    color: var(--primary_color);
+}
+
+/* ==========================
+   INFO BOX
+========================== */
 .info-box {
-    background: #f8f9fa;
-    padding: 25px;
-    border-radius: 10px;
-    transition: 0.3s;
-    height: 100%;   /* ADD THIS */
-    display: flex;  /* ADD THIS */
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(245,248,255,0.8));
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    border: 1px solid rgba(13,110,253,0.15);
+    border-radius: 16px;
+    padding: 30px 20px;
+    display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align:center;
+    transition: all 0.4s ease;
+    height: 100%;
+    min-height: 220px;
+}
+.info-box:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
 }
 .info-box i {
-    font-size: 30px;
-    color: #0d6efd;
-    margin-bottom: 10px;
-    display: block;
+    font-size:32px;
+    color:#fff;
+    background: linear-gradient(135deg,#0d6efd,#5aa2ff);
+    width:70px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    margin:0 auto 18px;
+    box-shadow:0 5px 15px rgba(13,110,253,0.4);
+}
+.info-box h5 {
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:8px;
+    color:#0b2c6b;
+}
+.info-box p {
+    font-size:17px;
+    color:#555;
 }
 
-.info-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+/* ==========================
+   SUBJECT CARDS
+========================== */
+.subject-card {
+    background: #fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.35s;
+    position:relative;
+    overflow:hidden;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.download-card {
-    border: 1px solid #ddd;
-    padding: 25px;
-    border-radius: 10px;
-    transition: 0.3s;
+.subject-card::before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:4px;
+    background: linear-gradient(90deg,#0d6efd,#4facfe);
+    top:0;
+    left:0;
 }
-
-.download-card i {
-    font-size: 40px;
-    color: #dc3545;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.download-card:hover {
-    background: #f1f7ff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}.subject-card {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: 0.3s;
-    height: 100%;
-}
-
 .subject-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-12px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.15);
 }
-
 .subject-card i {
-    font-size: 35px;
-    color: #0d6efd;
-    margin-bottom: 10px;
+    font-size:35px;
+    color:#0d6efd;
+    margin-bottom:10px;
 }
 
+/* ==========================
+   DOWNLOAD CARDS (UPDATED MODERN)
+========================== */
+.downloads-section{
+background:#f6f8fc;
+}
 
+.download-box{
+background:white;
+padding:40px 30px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.download-box:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.download-icon{
+width:70px;
+height:70px;
+background:#eef2ff;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.download-box h4{
+font-size:20px;
+font-weight:600;
+margin-bottom:10px;
+}
+
+.download-box p{
+font-size:14px;
+color:#666;
+margin-bottom:18px;
+}
+
+.download-btn{
+background:#2563eb;
+color:white;
+padding:10px 22px;
+border-radius:6px;
+text-decoration:none;
+font-size:14px;
+font-weight:500;
+}
+
+.download-btn:hover{
+background:#1d4ed8;
+}
+/* ==========================
+   BOTTOM BUTTONS
+========================== */
+.bottom-buttons {
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+.bottom-buttons .btn {
+    padding:12px 28px;
+    font-size:16px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.bottom-buttons .btn-primary {
+    background:#002147;
+    color:#fff;
+}
+
+.bottom-buttons .btn-secondary {
+    background:#f39c12;
+    color:#fff;
+}
+
+/* ==========================
+   PAGE BACKGROUND
+========================== */
+section.py-5 {
+    background:linear-gradient(180deg,#f7f9ff,#ffffff);
+}
+
+/* ==========================
+   ROW FIX
+========================== */
+.row.g-4 {
+    margin-top:20px;
+}
+
+.row.g-4 > .col-md-3 {
+    display:flex;
+    flex-direction:column;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+.info-box,
+.subject-card,
+.download-card {
+    animation:fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width:768px){
+
+    .bba-banner h1 {
+        font-size:28px;
+    }
+
+    .bba-banner p {
+        font-size:16px;
+    }
+
+    .section-title {
+        font-size:28px;
+    }
+
+    .info-box h5 {
+        font-size:18px;
+    }
+
+    .info-box p,
+    .overview-text,
+    .section-title + p {
+        font-size:16px;
+        line-height:1.4;
+    }
+
+    .subject-card i {
+        font-size:30px;
+    }
+
+    .download-card i {
+        font-size:34px;
+    }
+}
+
+/* ==========================
+   BODY BACKGROUND
+========================== */
+
+body{
+background:linear-gradient(135deg,#e8f0ff,#dfe9ff);
+}
