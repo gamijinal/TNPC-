@@ -197,7 +197,7 @@
     color: var(--secondary_color);
     font-weight: 600;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 25px;
     display: inline-block;
     margin-bottom: 10px;
 }
@@ -334,14 +334,14 @@
     padding: 15px;
 }
 
-.section-heading .sub-title {
+/* .section-heading .sub-title {
     color: var(--secondary_color);
     font-weight: 600;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 45px;
     display: inline-block;
     margin-bottom: 10px;
-}
+} */
 
 .section-heading h2 {
     font-size: 40px;
