@@ -3,12 +3,19 @@
 $host="localhost";
 $user="root";
 $password="";
-$database="tnpc";
 
-$conn=mysqli_connect($host,$user,$password,$database);
+// MySQL connect
+$conn=mysqli_connect($host,$user,$password);
 
 if(!$conn){
 die("Connection Failed");
 }
+
+// Database create if not exists
+$sql="CREATE DATABASE IF NOT EXISTS tnpc";
+mysqli_query($conn,$sql);
+
+// Select database
+mysqli_select_db($conn,"tnpc");
 
 ?>
