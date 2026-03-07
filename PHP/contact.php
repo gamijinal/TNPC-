@@ -68,14 +68,23 @@
                 <div class="col-lg-6 p-5 contact-info text-center">
                     <h3 class="mb-4">Contact Information</h3>
 
-                    <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9446285889003!2d72.39258927478757!3d23.6063186942936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c423000000007%3A0xd0e26b0c2022758d!2sThe%20New%20Progressive%20College%20Of%20Computer%20%26%20Management%20Studies%20(TNPC)!5e0!3m2!1sen!2sin!4v1770977515616!5m2!1sen!2sinloading="lazy"></a>
-                    <p>📍 Mehsana - 384001, Gujarat</p>
+                    <p>📍 <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9446285889003!2d72.39258927478757!3d23.6063186942936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c423000000007%3A0xd0e26b0c2022758d!2sThe%20New%20Progressive%20College%20Of%20Computer%20%26%20Management%20Studies%20(TNPC)!5e0!3m2!1sen!2sin!4v1770977515616!5m2!1sen!2sinloading="lazy">
+                    Mehsana - 384001, Gujarat </a></p>
                     
-                    <a href="tel:+91 9974959587" style="text-decoration:none; color:inherit;"></a>
-                    <p>📞 +91 9876543210</p> 
+                    <p>
+                            📞 
+                            <a href="tel:+919876543210" style="text-decoration:none; color:inherit;">
+                                +91 9876543210
+                            </a>
+                        </p>
 
-                    <a href="mailto:info@tthenewprogressivecollege.ac.in" style="text-decoration:none; color:inherit;"></a>
-                    <p>📧 info@thenewprogressivecollege.ac.in</p>
+                        <p>
+                            📧 
+                            <a href="mailto:info@thenewprogressivecollege.ac.in" 
+                            style="text-decoration:none; color:inherit;">
+                                info@thenewprogressivecollege.ac.in
+                            </a>
+                        </p>
                     <p>🕒 Mon - Sat : 9AM - 5PM</p>
                 </div>
 

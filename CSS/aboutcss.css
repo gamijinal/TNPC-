@@ -23,6 +23,8 @@
 .about-text {
     line-height: 1.8;
     text-align: justify;
+        font-size: 20px;   /* 👈 paragraph text bada hoga */
+
 }
 
 /* Highlight */
@@ -65,8 +67,6 @@
     font-size: 40px;
     color: #1e3a8a;
     margin-bottom: 15px;
-<<<<<<< HEAD
-=======
 }
 
 .vm-box h2 {
@@ -181,5 +181,4 @@ footer{
 .swarnim-heading h2{
     margin:0;
     text-align:left;
->>>>>>> 09f7a1a98950c3e728337e32022874cc8c61812a
 }

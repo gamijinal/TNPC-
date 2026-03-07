@@ -92,11 +92,11 @@
 
         <div class="d-flex align-items-center gap-3 mb-4 flex-wrap">
             <img src="../images/swarnim_logo.png" alt="Swarrnim Trust Logo" class="about-logo">
-            <h2 class="mb-0">About Swarrnim Trust</h2>
+            <h2 class="mb-0">About Swarnim Trust</h2>
         </div>
 
         <p class="about-text">
-            Swarrnim India Charitable Foundation is a reputed non-profit (section 8) company having its basic instinct to cater student community by providing the best technology education and Management education with the help of experts.
+            Swarnim India Charitable Foundation is a reputed non-profit (section 8) company having its basic instinct to cater student community by providing the best technology education and Management education with the help of experts.
             We have a team of experts having knowledge in web and mobile app development, cloud computing, cyber security, animation VFX and game design, IoT and Industry 4.0, Data Analytics.
             There is a shortage of employable talent, while industry demand is high. Our team, in consultation with industry, has designed programs to equip candidates with the required skills.
             We collaborate with various Gujarat Universities to deliver industry-oriented knowledge.

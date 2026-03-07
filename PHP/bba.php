@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>BBA Course</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Bootstrap -->
+     <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
@@ -65,7 +66,7 @@
                 <div class="info-box">
                     <i class="bi bi-people"></i>
                     <h5>Intake</h5>
-                    <p>60 Students</p>
+                    <p>120 Students</p>
                 </div>
             </div>
 
@@ -149,32 +150,55 @@
         </div>
 
         <!-- Downloads -->
-        <div class="text-center mb-4">
-            <h2 class="section-title">Downloads</h2>
-        </div>
+<section class="downloads-section py-5">
+<div class="container text-center">
 
-        <div class="row g-4">
+<h2 class="section-title">Downloads</h2>
 
-            <div class="col-md-6">
-                <div class="download-card text-center">
-                    <i class="bi bi-file-earmark-pdf"></i>
-                    <h5>BBA Syllabus</h5>
-                    <a href="../PHP/BBA_SYLLABUS.php" class="btn btn-danger">
-    Download Syllabus</a>            </div>
-            </div>
+<div class="row justify-content-center mt-4">
 
-            <div class="col-md-6">
-                <div class="download-card text-center">
-                    <i class="bi bi-file-earmark-text"></i>
-                    <h5>BBA Brochure</h5>
-                    <a href="pdfs/bba_brochure.pdf" download class="btn btn-primary">
-                        Download Brochure
-                    </a>
-                </div>
-            </div>
+<!-- SYLLABUS -->
+<div class="col-md-4">
+<div class="download-box">
 
-        </div>
+<div class="download-icon">
+    <i class="bi bi-file-earmark-pdf"></i>
 
+</div>
+
+<h4>BBA Syllabus</h4>
+
+<p>Download complete syllabus for BBA program.</p>
+
+<a href="../PHP/BBA_SYLLABUS.php" class="download-btn">
+Download Syllabus
+</a>
+
+</div>
+</div>
+
+<!-- BROCHURE -->
+<div class="col-md-4">
+<div class="download-box">
+
+<div class="download-icon"><i class="bi bi-journal-text"></i>
+</div>
+
+<h4> Brochure</h4>
+
+<p>Download official brochure with course details.</p>
+
+<a href="../PHP/BCA_BROCHURE.php" class="download-btn">
+Download Brochure
+</a>
+
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
         <!-- Buttons -->
         <div class="text-center mt-5">
             <a href="inquiry_submit.php" class="btn btn-primary btn-lg me-2">
