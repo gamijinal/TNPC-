@@ -1,20 +1,16 @@
 <?php
+
 include "db.php";
+
+$result=mysqli_query($conn,"SELECT * FROM admin");
+
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Manage Admin</title>
-</head>
-
-<body>
 
 <h2>Admin List</h2>
 
-<a href="add_admin.php">Add New Admin</a>
+<a href="add_admin.php">Add Admin</a>
 
-<table border="1" cellpadding="10">
+<table border="1">
 
 <tr>
 <th>ID</th>
@@ -22,23 +18,15 @@ include "db.php";
 <th>Action</th>
 </tr>
 
-<?php
-
-$query="SELECT * FROM admin";
-$result=mysqli_query($conn,$query);
-
-while($row=mysqli_fetch_assoc($result)){
-
-?>
+<?php while($row=mysqli_fetch_assoc($result)){ ?>
 
 <tr>
+
 <td><?php echo $row['id']; ?></td>
 <td><?php echo $row['username']; ?></td>
 
 <td>
-
 <a href="delete_admin.php?id=<?php echo $row['id']; ?>">Delete</a>
-
 </td>
 
 </tr>
@@ -46,6 +34,3 @@ while($row=mysqli_fetch_assoc($result)){
 <?php } ?>
 
 </table>
-
-</body>
-</html>
