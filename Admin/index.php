@@ -41,7 +41,16 @@
                             Admin Panel
                         </div>
 
+<<<<<<< HEAD
                     </div>
+=======
+<li><a href="#">Slider Images</a></li>
+
+<li><a href="logout.php">Logout</a></li>
+</ul>
+
+</div>
+>>>>>>> 2fb91bf9b05562a6acf2fbc2a2fb2a5569190377
 
 
                     <!-- Cards -->

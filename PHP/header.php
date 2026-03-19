@@ -60,6 +60,26 @@
                         <a class="nav-link" href="/PHP/contact.php">Contact US</a>
                     </li>
 
+            <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" 
+       id="loginDropdown" 
+       role="button" 
+       data-bs-toggle="dropdown" 
+       aria-expanded="false">
+        Login
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+        <li>
+            <a class="dropdown-item" href="/PHP/login.php">Admin</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="/PHP/login.php">Teacher</a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="/PHP/login.php">Student</a>
+        </li>
+    </ul>
+</li>
                     <!-- Apply Button -->
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
                         <button class="custom-btn">

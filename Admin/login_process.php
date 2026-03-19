@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 include "db.php";
@@ -18,7 +19,7 @@ header("Location: index.php");
 
 }else{
 
-echo "Invalid Username or Password";
+echo "Invalid Login";
 
 }
 

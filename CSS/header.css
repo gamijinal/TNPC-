@@ -59,4 +59,12 @@
     .college_name h2{
         font-size:12px;
     }
+}/* Dropdown pe underline hatao */
+.dropdown-toggle::after {
+    content: none !important;
+}
+
+
+.navbar-nav .dropdown .nav-link::after {
+    display: none !important;
 }
