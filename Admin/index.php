@@ -1,152 +1,133 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TNPC Admin Dashboard</title>
+    <title>TNPC Admin Dashboard</title>
 
-<link rel="stylesheet" href="admin.css">
-<link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+
 
 </head>
 
 <body>
 
-<div class="dashboard">
+    <div class="dashboard">
 
-<!-- Sidebar -->
+        <!-- Sidebar -->
 
-<div class="sidebar">
+            <?php include "sidemenu.php"; ?>
 
-<h2 class="logo">TNPC Admin</h2>
+            <div class="main-content">
 
-<ul>
+                <!-- Main Content -->
 
-<li class="active"><a href="#">Dashboard</a></li>
+                <div class="main-content">
 
-<li><a href="#">Manage Courses</a></li>
+                    <!-- Topbar -->
 
-<li><a href="#">Admissions</a></li>
+                    <div class="topbar">
 
-<li><a href="#">Contact Messages</a></li>
+                        <h1>Dashboard</h1>
 
-<li><a href="#">News & Updates</a></li>
+                        <div class="admin-info">
+                            Admin Panel
+                        </div>
 
-<li><a href="#">Slider Images</a></li>
-
-<li><a href="logout.php
-">Logout</a></li>
-
-</ul>
-
-</div>
+                    </div>
 
 
-<!-- Main Content -->
+                    <!-- Cards -->
 
-<div class="main-content">
+                    <div class="cards">
 
-<!-- Topbar -->
+                        <a href="manage_course.php" class="card-link">
 
-<div class="topbar">
+                            <div class="card">
 
-<h1>Dashboard</h1>
+                                <h3><i class="fa-solid fa-book"></i> Total Courses</h3>
+                                <p>2</p>
 
-<div class="admin-info">
-Admin Panel
-</div>
+                            </div>
 
-</div>
+                        </a>
+                        <div class="card">
 
+                            <h3>Total Enquiry</h3>
 
-<!-- Cards -->
+                            <p>35</p>
 
-<div class="cards">
-
-<div class="card">
-
-<h3>Total Courses</h3>
-
-<p>2</p>
-
-</div>
+                        </div>
 
 
-<div class="card">
+                        <div class="card">
 
-<h3>Total Enquiry</h3>
+                            <h3>Faculty Members</h3>
 
-<p>35</p>
+                            <p>12</p>
 
-</div>
+                        </div>
 
+                        <a href="news_update.php" class="card-link">
+                            <div class="card">
 
-<div class="card">
+                                <h3>News Updates</h3>
 
-<h3>Faculty Members</h3>
+                                <p>4</p>
 
-<p>12</p>
+                            </div>
+                        </a>
 
-</div>
-
-
-<div class="card">
-
-<h3>News Updates</h3>
-
-<p>4</p>
-
-</div>
-
-</div>
+                    </div>
 
 
-<!-- Recent Activity Table -->
+                    <!-- Recent Activity Table -->
 
-<div class="recent">
+                    <div class="recent">
 
-<h2>Recent Admissions</h2>
+                        <h2>Recent Admissions</h2>
 
-<table>
+                        <table>
 
-<tr>
-<th>Name</th>
-<th>Course</th>
-<th>Date</th>
-</tr>
+                            <tr>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Date</th>
+                            </tr>
 
-<tr>
-<td>Rahul Patel</td>
-<td>BCA</td>
-<td>12 May 2026</td>
-</tr>
+                            <tr>
+                                <td>Rahul Patel</td>
+                                <td>BCA</td>
+                                <td>12 May 2026</td>
+                            </tr>
 
-<tr>
-<td>Pooja Shah</td>
-<td>BBA</td>
-<td>10 May 2026</td>
-</tr>
+                            <tr>
+                                <td>Pooja Shah</td>
+                                <td>BBA</td>
+                                <td>10 May 2026</td>
+                            </tr>
 
-<tr>
-<td>Amit Mehta</td>
-<td>BCA</td>
-<td>08 May 2026</td>
-</tr>
+                            <tr>
+                                <td>Amit Mehta</td>
+                                <td>BCA</td>
+                                <td>08 May 2026</td>
+                            </tr>
 
-</table>
+                        </table>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
 </body>
+
 </html>

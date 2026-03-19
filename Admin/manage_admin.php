@@ -4,48 +4,50 @@ include "db.php";
 
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Manage Admin</title>
+    <title>Manage Admin</title>
 </head>
 
 <body>
 
-<h2>Admin List</h2>
+    <h2>Admin List</h2>
 
-<a href="add_admin.php">Add New Admin</a>
+    <a href="add_admin.php">Add New Admin</a>
 
-<table border="1" cellpadding="10">
+    <table border="1" cellpadding="10">
 
-<tr>
-<th>ID</th>
-<th>Username</th>
-<th>Action</th>
-</tr>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Action</th>
+        </tr>
 
-<?php
+        <?php
 
-$query="SELECT * FROM admin";
-$result=mysqli_query($conn,$query);
+        $query = "SELECT * FROM admin";
+        $result = mysqli_query($conn, $query);
 
-while($row=mysqli_fetch_assoc($result)){
+        while ($row = mysqli_fetch_assoc($result)) {
 
-?>
+        ?>
 
-<tr>
-<td><?php echo $row['id']; ?></td>
-<td><?php echo $row['username']; ?></td>
+            <tr>
+                <td><?php echo $row['id']; ?></td>
+                <td><?php echo $row['username']; ?></td>
 
-<td>
+                <td>
 
-<a href="delete_admin.php?id=<?php echo $row['id']; ?>">Delete</a>
+                    <a href="delete_admin.php?id=<?php echo $row['id']; ?>">Delete</a>
 
-</td>
+                </td>
 
-</tr>
+            </tr>
 
-<?php } ?>
+        <?php } ?>
 
-</table>
+    </table>
 
 </body>
+
 </html>
