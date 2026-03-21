@@ -1,6 +1,9 @@
+<?php
+include __DIR__ . '/../admin/db.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
-
+<meta http-equiv="refresh" content="5">
 <head>
 
     <meta charset="UTF-8">
@@ -41,16 +44,8 @@
                             Admin Panel
                         </div>
 
-<<<<<<< HEAD
-                    </div>
-=======
-<li><a href="#">Slider Images</a></li>
-
-<li><a href="logout.php">Logout</a></li>
-</ul>
 
 </div>
->>>>>>> 2fb91bf9b05562a6acf2fbc2a2fb2a5569190377
 
 
                     <!-- Cards -->
@@ -67,13 +62,17 @@
                             </div>
 
                         </a>
-                        <div class="card">
+                                                    <div class="card">
+                        <h3>Total Enquiry</h3>
 
-                            <h3>Total Enquiry</h3>
+                <?php
+                    $stmt = $conn->query("SELECT COUNT(*) as total FROM inquiries");
+                    $data = $stmt->fetch(PDO::FETCH_ASSOC);
+                        ?>
+    
+                    <p><?php echo $data['total']; ?></p>
 
-                            <p>35</p>
-
-                        </div>
+                    </div>
 
 
                         <div class="card">
@@ -101,36 +100,41 @@
 
                     <div class="recent">
 
-                        <h2>Recent Admissions</h2>
+                        
 
-                        <table>
+    <h2>All Inquiries</h2>
 
-                            <tr>
-                                <th>Name</th>
-                                <th>Course</th>
-                                <th>Date</th>
-                            </tr>
+    <table border="1" cellpadding="10" width="100%">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Course</th>
+            <th>Qualification</th>
+            <th>Date</th>
+        </tr>
 
-                            <tr>
-                                <td>Rahul Patel</td>
-                                <td>BCA</td>
-                                <td>12 May 2026</td>
-                            </tr>
+        <?php
+        $stmt = $conn->query("SELECT * FROM inquiries ORDER BY id DESC");
 
-                            <tr>
-                                <td>Pooja Shah</td>
-                                <td>BBA</td>
-                                <td>10 May 2026</td>
-                            </tr>
+while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+?>
+<tr>
+    <td><?php echo $row['id']; ?></td>
+    <td><?php echo $row['name']; ?></td>
+    <td><?php echo $row['phone']; ?></td>
+    <td><?php echo $row['email']; ?></td>
+    <td><?php echo $row['city']; ?></td>
+    <td><?php echo $row['course']; ?></td>
+    <td><?php echo $row['qualification']; ?></td>
+    <td><?php echo date("d M Y", strtotime($row['created_at'])); ?></td>
+</tr>
+<?php } ?>
+    </table>
 
-                            <tr>
-                                <td>Amit Mehta</td>
-                                <td>BCA</td>
-                                <td>08 May 2026</td>
-                            </tr>
-
-                        </table>
-
+</div>
                     </div>
 
                 </div>

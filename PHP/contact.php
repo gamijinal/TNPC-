@@ -68,10 +68,18 @@
                 <div class="col-lg-6 p-5 contact-info text-center">
                     <h3 class="mb-4">Contact Information</h3>
 
-                    <p>📍 <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9446285889003!2d72.39258927478757!3d23.6063186942936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c423000000007%3A0xd0e26b0c2022758d!2sThe%20New%20Progressive%20College%20Of%20Computer%20%26%20Management%20Studies%20(TNPC)!5e0!3m2!1sen!2sin!4v1770977515616!5m2!1sen!2sinloading="lazy">
-                    Mehsana - 384001, Gujarat </a></p>
-                    
-                    <p>
+                    <p>📍 Mehsana - 384001, Gujarat</p>
+
+<div class="map-box mt-3">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9446285889003!2d72.39258927478757!3d23.6063186942936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c423000000007%3A0xd0e26b0c2022758d!2sThe%20New%20Progressive%20College%20Of%20Computer%20%26%20Management%20Studies%20(TNPC)!5e0!3m2!1sen!2sin!4v1770977515616!5m2!1sen!2sin"
+        width="100%"
+        height="200"
+        style="border:0; border-radius:10px;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
                             📞 
                             <a href="tel:+919876543210" style="text-decoration:none; color:inherit;">
                                 +91 9876543210

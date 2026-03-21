@@ -1,3 +1,23 @@
+
+<?php
+include __DIR__ . '/../admin/db.php';
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+    $stmt = $conn->prepare("INSERT INTO inquiries (name, phone, email, city, course, qualification)
+                           VALUES (:name, :phone, :email, :city, :course, :qualification)");
+
+    $stmt->execute([
+        ':name' => $_POST['name'],
+        ':phone' => $_POST['phone'],
+        ':email' => $_POST['email'],
+        ':city' => $_POST['city'],
+        ':course' => $_POST['course'],
+        ':qualification' => $_POST['qualification']
+    ]);
+
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,12 +60,13 @@
                 <div class="card shadow p-4 border-0">
                     <h4 class="text-center mb-4">Fill Your Details</h4>
 
-                    <form method="POST">
+                    <form method="POST" id="inquiryForm"</form>
 
                         <div class="mb-3">
-                            <label class="form-label">Full Name *</label>
-                            <input type="text" name="name" class="form-control" required pattern="[A-Za-z ]{3,}">
-                        </div>
+                        <input type="text" name="name" id="name" class="form-control" required 
+       pattern="[A-Za-z ]{3,}" 
+       onkeypress="return onlyLetters(event)">        
+                    </div>
 
                         <div class="mb-3">
                             <label class="form-label">Mobile Number *</label>
@@ -94,10 +115,9 @@
                             We respect your privacy. Your details will not be shared.
                         </p>
 
-                        <button type="submit" class="btn btn-primary w-100">
-                            Submit Inquiry
-                        </button>
-
+                                        <button type="submit" name="submit" class="btn btn-primary w-100">
+                                        Submit Inquiry
+                                    </button>
                     </form>
 
                 </div>
@@ -110,6 +130,28 @@
 <?php include 'footer.php'; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- 🔥 YAHAN ADD KARO -->
+<script>
+document.getElementById("inquiryForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let formData = new FormData(this);
+
+    fetch("save_inquiry.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        if(data === "success"){
+            alert("Submitted Successfully");
+            document.getElementById("inquiryForm").reset();
+        }
+    });
+});
+</script>
+
 
 </body>
 </html>
