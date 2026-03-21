@@ -15,7 +15,7 @@ session_start();
 
 <div class="login-wrapper">
     <div class="login-card">
-        <h2>TNPC Admin</h2>
+        
         <p>Login to your dashboard</p>
 
         <form action="check_login.php" method="POST">
