@@ -1,8 +1,7 @@
 <?php
-// db.php - Database connection & role-based session start
-
-session_start(); // Start session for login management
-
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 $host = "localhost";
 $user = "root";
 $password = "";

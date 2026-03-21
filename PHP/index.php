@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,89 +107,53 @@
 
     <!-- Course section starts -->
     <section class="course-section py-5">
-        <div class="container">
+    <div class="container">
 
-            <!-- Section Heading -->
-            <div class="text-center mb-5 section-heading">
-                <span class="sub-title">OUR COURSES</span>
-                <h2>Discover Your Path to Success</h2>
-                <p>
-                    Our industry-linked programs are designed in collaboration with experts
-                    to match current market demands. Choose the path that shapes your career.
-                </p>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- BCA Card -->
-                <div class="col-lg-6">
-                    <div class="course-card">
-
-                        <div class="course-img blue-overlay">
-                            <i class="bi bi-display"></i>
-                        </div>
-
-                        <div class="course-content">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h3>BCA</h3>
-                                <span class="duration-badge blue-badge">3 Years / 6 Sem</span>
-                            </div>
-
-                            <h5>Bachelor of Computer Applications</h5>
-                            <p>
-                                Build the tech future. A degree focused on programming,
-                                app development, AI, cybersecurity, and cloud computing.
-                            </p>
-
-                            <ul>
-                                <li>Web & Mobile Dev (HTML, PHP, Android)</li>
-                                <li>Programming (C, C++, Java, Python)</li>
-                                <li>Database & Cloud Infrastructure</li>
-                            </ul>
-                            <a href="bca.php" class="course-btn">
-                                View More Details
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- BBA Card -->
-                <div class="col-lg-6">
-                    <div class="course-card">
-
-                        <div class="course-img orange-overlay">
-                            <i class="bi bi-briefcase"></i>
-                        </div>
-
-                        <div class="course-content">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h3>BBA</h3>
-                                <span class="duration-badge orange-badge">3 Years / 6 Sem</span>
-                            </div>
-
-                            <h5>Bachelor of Business Administration</h5>
-                            <p>
-                                Lead the business world. Equip yourself with knowledge
-                                and leadership skills to stand out in corporate life.
-                            </p>
-
-                            <ul>
-                                <li>Marketing & Finance Strategies</li>
-                                <li>Entrepreneurship & Startup Skills</li>
-                                <li>Soft Skills & Corporate Leadership</li>
-                            </ul>
-                            <a href="bba.php" class="course-btn">
-                                View More Details
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
+        <div class="text-center mb-5 section-heading">
+            <span class="sub-title">OUR COURSES</span>
+            <h2>Discover Your Path to Success</h2>
+            <p>
+                Our industry-linked programs are designed in collaboration with experts
+                to match current market demands. Choose the path that shapes your career.
+            </p>
         </div>
-    </section>
+
+        <div class="row g-4">
+            <?php
+            include '../Admin/db.php'; // DB connection
+
+            $stmt = $conn->query("SELECT * FROM courses ORDER BY id ASC");
+            while($course = $stmt->fetch(PDO::FETCH_ASSOC)){
+                $features = explode(',', $course['features']); // convert features to array
+            ?>
+            <div class="col-lg-6">
+                <div class="course-card">
+                    <div class="course-img <?php echo $course['overlay_class']; ?>">
+                        <i class="bi <?php echo $course['icon_class']; ?>"></i>
+                    </div>
+                    <div class="course-content">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3><?php echo $course['short_name']; ?></h3>
+                            <span class="duration-badge <?php echo $course['overlay_class']; ?>"><?php echo $course['duration']; ?></span>
+                        </div>
+
+                        <h5><?php echo $course['name']; ?></h5>
+                        <p><?php echo $course['description']; ?></p>
+
+                        <ul>
+                            <?php foreach($features as $feature){ ?>
+                                <li><?php echo trim($feature); ?></li>
+                            <?php } ?>
+                        </ul>
+
+                        <a href="<?php echo $course['link']; ?>" class="course-btn">View More Details</a>
+                    </div>
+                </div>
+            </div>
+            <?php } ?>
+        </div>
+    </div>
+</section>
 
     <!-- news and updation seciton  -->
     <section class="news-section py-5">
