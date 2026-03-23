@@ -1,7 +1,4 @@
-<?php
-session_start();
-?>
-<!DOCTYPE html>
+omm<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -13,40 +10,27 @@ session_start();
 </head>
 <body>
 
-<div class="login-wrapper">
-    <div class="login-card">
-        
-        <p>Login to your dashboard</p>
+<div class="login-box">
+<h3 class="text-center mb-3">Login</h3>
 
-        <form action="check_login.php" method="POST">
+<form action="check_login.php" method="POST">
 
-            <!-- Role Selection inline, same style -->
-            <div class="role-selection" style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
-                <label>Select Role:</label>
-                <input type="radio" name="role" value="admin" required> Admin
-                <input type="radio" name="role" value="teacher"> Teacher
-                <input type="radio" name="role" value="student"> Student
-            </div>
+<!-- Role Selection -->
+<div class="mb-3">
+<label>Select Role:</label><br>
 
-            <!-- Username -->
-            <div class="input-group">
-                <label>Username</label>
-                <input type="text" name="username" required>
-            </div>
+<input type="radio" name="role" value="admin" required> Admin<br>
+<input type="radio" name="role" value="teacher"> Teacher<br>
+<input type="radio" name="role" value="student"> Student
 
-            <!-- Password -->
-            <div class="input-group">
-                <label>Password</label>
-                <input type="password" name="password" required>
-            </div>
+</div>
 
-            <!-- Button -->
-            <button type="submit" class="custom-btn login-btn">
-                Login
-            </button>
+<input type="text" name="username" class="form-control mb-3" placeholder="Username" required>
+<input type="password" name="password" class="form-control mb-3" placeholder="Password" required>
 
-        </form>
-    </div>
+<button class="btn btn-primary w-100">Login</button>
+
+</form>
 </div>
 
 </body>

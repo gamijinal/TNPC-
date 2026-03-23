@@ -174,61 +174,20 @@
             <div class="row">
 
                 <!-- Card 1 -->
-                <div class="col-md-6 mb-4">
+                <a href="news-details.php" class="news-link">
                     <div class="news-card d-flex">
+
                         <div class="news-img">
                             <img src="/images/1.jpg" alt="">
                         </div>
+
                         <div class="news-content">
                             <h4>Education Your Way</h4>
                             <p>There’s only one required course for undergraduates.</p>
-                            <a href="#" class="read-btn">Read More</a>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Card 2 -->
-                <div class="col-md-6 mb-4">
-                    <div class="news-card d-flex">
-                        <div class="news-img">
-                            <img src="/images/2.jpg" alt="">
-                        </div>
-                        <div class="news-content">
-                            <h4>Research is in Our DNA</h4>
-                            <p>Students and faculty collaborate to make discoveries.</p>
-                            <a href="#" class="read-btn">Read More</a>
-                        </div>
                     </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-6 mb-4">
-                    <div class="news-card d-flex">
-                        <div class="news-img">
-                            <img src="/images/3.jpg" alt="">
-                        </div>
-                        <div class="news-content">
-                            <h4>The City We Call Home</h4>
-                            <p>We’re nestled between the river and downtown life.</p>
-                            <a href="#" class="read-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-md-6 mb-4">
-                    <div class="news-card d-flex">
-                        <div class="news-img">
-                            <img src="/images/4.jpg" alt="">
-                        </div>
-                        <div class="news-content">
-                            <h4>Amazing Value</h4>
-                            <p>Top rankings based on quality education and value.</p>
-                            <a href="#" class="read-btn">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
+                </a>
             </div>
         </div>
         <div class="text-center mt-5">

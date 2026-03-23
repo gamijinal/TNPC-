@@ -391,6 +391,23 @@
     transition: 0.4s ease;
 }
 
+.news-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.news-link:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-link:hover .news-card{
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
 /* Zoom effect on hover */
 .news-card:hover .news-img img {
     transform: scale(1.05);
