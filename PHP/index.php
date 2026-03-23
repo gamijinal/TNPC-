@@ -129,8 +129,8 @@
             <div class="col-lg-6">
                 <div class="course-card">
                     <div class="course-img <?php echo $course['overlay_class']; ?>">
-                        <i class="bi <?php echo $course['icon_class']; ?>"></i>
-                    </div>
+    <i class="bi <?php echo $course['icon_class']; ?>"></i>
+</div>
                     <div class="course-content">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <h3><?php echo $course['short_name']; ?></h3>

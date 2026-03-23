@@ -416,3 +416,11 @@
 .btn-close {
     filter: invert(1);
 }
+.duration-badge {
+    background: #0d3b66;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    white-space: nowrap;   /* 🔥 ye sabse important */
+}
