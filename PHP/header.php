@@ -82,9 +82,10 @@
 </li>
                     <!-- Apply Button -->
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <button class="custom-btn">
-                            Apply Now
-                        </button>
+                            <button class="custom-btn"
+        onclick="window.open('https://gcasadmin.gujgov.edu.in/')">
+    Apply Now
+</button>
                     </li>
 
                 </ul>

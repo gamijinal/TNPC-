@@ -83,7 +83,9 @@
                         <div class="hero-content">
                             <h1>Admission Open 2026-27</h1>
                             <p>Enroll now for BCA & BBA programs with placement assistance.</p>
-                            <a href="#" class="custom-btn">Apply Now</a>
+    <a href="https://gcasadmin.gujgov.edu.in/" target="_blank" class="btn btn-warning">
+    Apply Now
+</a>
                         </div>
                     </div>
                 </div>
