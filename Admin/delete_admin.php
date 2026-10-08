@@ -2,10 +2,12 @@
 
 include "db.php";
 
-$id=$_GET['id'];
+$id = (int)($_GET['id'] ?? 0);
 
-mysqli_query($conn,"DELETE FROM admin WHERE id='$id'");
+$stmt = $conn->prepare("DELETE FROM admin WHERE id = ?");
+$stmt->execute([$id]);
 
 header("Location: manage_admin.php");
+exit();
 
 ?>

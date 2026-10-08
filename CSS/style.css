@@ -1,5 +1,5 @@
 :root {
-    --primary_color: #002147;
+    --primary_color: #0d3b66;
     --secondary_color: rgb(242, 100, 25);
     --text_color: #333;
     --hover_color: #ccc;
@@ -53,4 +53,117 @@ ul {
     box-shadow: 0 12px 25px rgba(0,0,0,0.25);
     background: var(--primary_color);
     color: white;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: transparent; /* hide any default track */
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary_color);
+  border-radius: 6px;
+  border: none;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent; /* hide any remaining track line */
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary_color) transparent;
+}
+
+
+/* ==== Premium Design Enhancements ==== */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header logo styling */
+.header-logo {
+  width: 70px;
+  transition: transform 0.3s ease;
+}
+.header-logo:hover {
+  transform: scale(1.05);
+}
+.logo-text {
+  font-size: 0.9rem;
+  color: var(--secondary_color);
+  margin-top: 4px;
+}
+
+/* News card styling */
+.news-link {
+  text-decoration: none;
+  color: inherit;
+}
+.news-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.news-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.news-content h4 {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: var(--primary_color);
+}
+.news-content p {
+  margin: 0;
+  color: var(--text_color);
+}
+
+/* Footer premium style */
+footer {
+  background: #0d3b66;
+  color: #fff;
+  padding-top: 2rem;
+}
+footer a {
+  color: #ff9f40;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #fff;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .header-logo { width: 80px; }
+  .news-card { flex-direction: column; }
+}
+
+/* Global Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

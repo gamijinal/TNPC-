@@ -4,22 +4,26 @@ session_start();
 
 include "db.php";
 
-$username=$_POST['username'];
-$password=$_POST['password'];
+$username = trim($_POST['username'] ?? '');
+$password = $_POST['password'] ?? '';
 
-$query="SELECT * FROM admin WHERE username='$username' AND password='$password'";
+$stmt = $conn->prepare("SELECT * FROM admin WHERE username = ?");
+$stmt->execute([$username]);
+$admin = $stmt->fetch();
 
-$result=mysqli_query($conn,$query);
+if ($admin && password_verify($password, $admin['password'])) {
 
-if(mysqli_num_rows($result)>0){
+    $_SESSION['admin'] = $username;
+    $_SESSION['user_id'] = $admin['id'];
+    $_SESSION['username'] = $username;
+    $_SESSION['role'] = 'admin';
 
-$_SESSION['admin']=$username;
+    header("Location: index.php");
+    exit();
 
-header("Location: index.php");
+} else {
 
-}else{
-
-echo "Invalid Login";
+    echo "Invalid Login";
 
 }
 

@@ -4,7 +4,9 @@
 
             <!-- Logo Section -->
             <a class="navbar-brand d-flex align-items-center gap-3" href="#">
-                <img src="/images/TNPC_logo.png" width="70" alt="College Logo">
+                 <img src="/images/TNPC_logo.png" class="header-logo" alt="College Logo">
+
+
 
                 <div class="college_name">
                     <h1 class="mb-0">THE NEW PROGRESSIVE COLLEGE OF</h1>
@@ -54,6 +56,10 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="/PHP/about.php">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/PHP/career.php">Career</a>
                     </li>
 
                     <li class="nav-item">

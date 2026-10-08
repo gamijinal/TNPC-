@@ -4,13 +4,14 @@ include "db.php";
 
 if(isset($_POST['submit'])){
 
-$username=$_POST['username'];
-$password=$_POST['password'];
+$username = trim($_POST['username']);
+$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-mysqli_query($conn,"INSERT INTO admin(username,password)
-VALUES('$username','$password')");
+$stmt = $conn->prepare("INSERT INTO admin(username,password) VALUES(?,?)");
+$stmt->execute([$username, $password]);
 
 header("Location: manage_admin.php");
+exit();
 
 }
 
@@ -21,10 +22,10 @@ header("Location: manage_admin.php");
 <form method="POST">
 
 Username
-<input type="text" name="username">
+<input type="text" name="username" required>
 
 Password
-<input type="password" name="password">
+<input type="password" name="password" required>
 
 <button name="submit">Add Admin</button>
 

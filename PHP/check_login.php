@@ -1,18 +1,16 @@
 <?php
-// Enable error reporting for debugging (remove in production)
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-// Include DB connection
-include '../admin/db.php';
+// Role login: admin / teacher / student (tables: admin, teacher, student)
 session_start(); // Must be at top, before any output
+
+// Include DB connection (shared PDO)
+include __DIR__ . '/../Admin/db.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Get form data
-    $role = $_POST['role']; // admin/teacher/student
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
+    $role = $_POST['role'] ?? ''; // admin/teacher/student
+    $username = trim($_POST['username'] ?? '');
+    $password = $_POST['password'] ?? '';
 
     // Validate role
     $allowed_roles = ['admin', 'teacher', 'student'];
@@ -20,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         die("Invalid role selected.");
     }
 
-    // Table name matches role
+    // Table name matches role (safe: validated above)
     $table = $role;
 
     // Prepare query safely
@@ -28,30 +26,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute(['username' => $username]);
     $user = $stmt->fetch();
 
-    if ($user) {
-        // Plain-text password check
-        if ($password === trim($user['password'])) {
-            // Set session
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['username'] = $user['username'];
-            $_SESSION['role'] = $role;
+    if ($user && password_verify($password, $user['password'])) {
+        // Set session
+        $_SESSION['user_id'] = $user['id'];
+        $_SESSION['username'] = $user['username'];
+        $_SESSION['name'] = $user['name'] ?? $user['username'];
+        $_SESSION['role'] = $role;
 
-            // Redirect based on role
-            if ($role === 'admin') {
-    header("Location: ../Admin/index.php"); // correct path based on your structure
-                exit();
-            } elseif ($role === 'teacher') {
-                header("Location: teacher_dashboard.php");
-                exit();
-            } else {
-                header("Location: student_dashboard.php");
-                exit();
-            }
+        // Redirect based on role
+        if ($role === 'admin') {
+            header("Location: ../Admin/index.php");
+            exit();
+        } elseif ($role === 'teacher') {
+            header("Location: ../TEACHER/dashboard.php");
+            exit();
         } else {
-            echo "<script>alert('Incorrect password'); window.location='login.php';</script>";
+            header("Location: ../STUDENT/dashboard.php");
+            exit();
         }
     } else {
-        echo "<script>alert('User not found'); window.location='login.php';</script>";
+        echo "<script>alert('Invalid username or password'); window.location='login.php';</script>";
     }
 }
 ?>

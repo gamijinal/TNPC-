@@ -54,125 +54,284 @@
     color: #fff;
 }
 
-/* herosection */
+/* herosection : 5-image auto slider (screenshot design) */
 .hero-slider {
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #0a1e37;
 }
 
-.hero-slide {
-    height: 600px;
+#mainHeroCarousel {
+    position: relative;
+}
+
+.hero-carousel-inner,
+.hero-carousel-inner .carousel-item {
+    height: 650px;
+}
+
+.hero-bg-img {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Slow zoom effect on active slide - premium look */
+.hero-carousel-inner .carousel-item.active .hero-bg-img {
+    animation: heroZoom 7s ease forwards;
+}
+
+@keyframes heroZoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+}
+
+/* Dark overlay so text is readable on any photo */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(8, 28, 52, 0.88) 0%,
+        rgba(8, 28, 52, 0.65) 45%,
+        rgba(8, 28, 52, 0.25) 100%
+    );
+    z-index: 1;
+}
+
+.hero-carousel-inner .carousel-item {
+    position: relative;
+}
+
+/* Per-slide caption above its image (same size every slide = no layout jump) */
+.hero-content-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
     display: flex;
     align-items: center;
     padding-left: 8%;
-    color: white;
+    padding-right: 5%;
+    padding-bottom: 46px; /* dots ke liye jagah */
+    pointer-events: none;
 }
+
+.hero-content-wrap a {
+    pointer-events: auto;
+}
+
+/* Har slide change par text halka upar se aayega */
+.hero-carousel-inner .carousel-item .hero-content > * {
+    opacity: 0;
+}
+.hero-carousel-inner .carousel-item.active .hero-content > * {
+    animation: heroFadeUp 0.7s ease forwards;
+}
+.hero-carousel-inner .carousel-item.active .hero-content > *:nth-child(2) { animation-delay: 0.1s; }
+.hero-carousel-inner .carousel-item.active .hero-content > *:nth-child(3) { animation-delay: 0.2s; }
+.hero-carousel-inner .carousel-item.active .hero-content > *:nth-child(4) { animation-delay: 0.3s; }
+.hero-carousel-inner .carousel-item.active .hero-content > *:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(22px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .hero-content {
-    max-width: 600px;
-}
-/* Slide 1 Gradient */
-/* .slide1 {
-    background: linear-gradient(120deg, #002147 60%, rgba(242,100,25,0.85) 100%);
-} */
-
-.slide1 {
-    height: 600px;
-    background: 
-        linear-gradient(
-            120deg,
-            rgba(0, 33, 71, 0.75) 40%,
-            rgba(242, 100, 25, 0.25) 100%
-        ),
-        url("../images/slider1.png");
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
 }
 
-
-
-/* Slide 2 Gradient */
-/* .slide2 {
-    background: linear-gradient(to right, #002147, #001633);
-} */
-
-.slide2 {
-    height: 600px;
-    background: 
-        linear-gradient(
-            120deg,
-            rgba(0, 33, 71, 0.75) 40%,
-            rgba(242, 100, 25, 0.25) 100%
-        ),
-        url("../images/slider1.png");
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
+.hero-badge {
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 30px;
+    background: rgba(242, 100, 25, 0.18);
+    border: 1px solid rgba(245, 166, 91, 0.55);
+    color: #f5a65b;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 22px;
 }
-
-/* Slide 3 Gradient */
-.slide3 {
-    height: 600px;
-    background: 
-        linear-gradient(
-            120deg,
-            rgba(0, 33, 71, 0.75) 40%,
-            rgba(242, 100, 25, 0.25) 100%
-        ),
-        url("../images/slider1.png");
-    background-size: cover;
-    background-position: center right;
-    background-repeat: no-repeat;
-}
-/* .slide3 {
-    background: linear-gradient(135deg, #002147, rgb(242,100,25));
-} */
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    color: #fff;
+    line-height: 1.2;
+    text-shadow: 2px 4px 12px rgba(0,0,0,0.4);
+}
+
+.hero-content h1 .text-orange {
+    color: #f26722;
 }
 
 .hero-content p {
-    font-size: 22px;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 28px;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.92);
+    max-width: 760px;
 }
 
-.hero-btn {
+.hero-btns {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.btn-explore {
     display: inline-block;
-    padding: 12px 28px;
-    background: var(--secondary_color);
+    padding: 14px 44px;
+    background: #f26722;
     color: #fff;
-    border-radius: 8px;
-    font-weight: 600;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 8px 22px rgba(242,103,34,0.4);
     transition: 0.3s ease;
 }
 
-.hero-btn:hover {
-    background: #fff;
-    color: var(--primary_color);
+.btn-explore:hover {
+    background: #d95515;
+    color: #fff;
+    transform: translateY(-2px);
 }
-/* Responsive */
+
+.btn-apply-outline {
+    display: inline-block;
+    padding: 14px 52px;
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,0.8);
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-apply-outline:hover {
+    background: #fff;
+    color: #0a1e37;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 38px;
+    flex-wrap: wrap;
+}
+
+.hero-stat strong {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+}
+
+.hero-stat span {
+    font-size: 15px;
+    color: rgba(255,255,255,0.85);
+}
+
+/* Dots : 5 round indicators */
+.hero-dots {
+    bottom: 22px;
+    z-index: 6;
+}
+
+.hero-dots button {
+    width: 11px !important;
+    height: 11px !important;
+    border-radius: 50% !important;
+    background-color: rgba(255,255,255,0.5) !important;
+    border: none !important;
+    margin: 0 5px !important;
+}
+
+.hero-dots .active {
+    background-color: #f26722 !important;
+    transform: scale(1.15);
+}
+
+/* Arrows : hover par dikhenge */
+.hero-arrow {
+    width: 6%;
+    z-index: 6;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero-slider:hover .hero-arrow {
+    opacity: 0.9;
+}
+
+/* Responsive : same height har slide par, layout jump nahi hoga */
 @media (max-width: 768px) {
 
-    .hero-slide {
-        height: 420px;
-        padding: 0 5%;
+    .hero-carousel-inner,
+    .hero-carousel-inner .carousel-item,
+    .hero-bg-img {
+        height: 690px;
+    }
+
+    .hero-content-wrap {
+        padding: 20px 6% 54px;
         text-align: center;
         justify-content: center;
+        align-items: center;
     }
 
     .hero-content {
         max-width: 100%;
     }
 
+    .hero-badge {
+        font-size: 14px;
+    }
+
     .hero-content h1 {
-        font-size: 28px;
+        font-size: 27px;
     }
 
     .hero-content p {
+        font-size: 14.5px;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .btn-explore,
+    .btn-apply-outline {
         font-size: 15px;
+        padding: 12px 32px;
+    }
+
+    .hero-stats {
+        gap: 18px 30px;
+        justify-content: center;
+        margin-top: 26px;
+    }
+
+    .hero-stat strong {
+        font-size: 22px;
+    }
+
+    .hero-stat span {
+        font-size: 12.5px;
+    }
+
+    .hero-arrow {
+        display: none;
     }
 }
 
@@ -239,7 +398,8 @@
 }
 
 .course-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .course-img {
@@ -254,11 +414,15 @@
 .blue-overlay {
     background: linear-gradient(rgba(0,33,71,0.9), rgba(0,33,71,0.9)),
                 url('/images/bca_course.jpg') center/cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .orange-overlay {
     background: linear-gradient(rgba(242,100,25,0.9), rgba(242,100,25,0.9)),
                 url('/images/bba_course.jpg') center/cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .course-content {
@@ -320,6 +484,9 @@
     border-radius: 6px;
     text-decoration: none;
     transition: 0.3s ease;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .course-btn:hover {

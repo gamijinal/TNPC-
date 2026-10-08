@@ -1,24 +1,27 @@
 <?php
+// Student email login (uses shared PDO + users table)
 session_start();
-$conn = mysqli_connect("localhost","root","","your_db");
+require __DIR__ . '/../Admin/db.php';
 
-$email = $_POST['email'];
-$password = $_POST['password'];
+$email = trim($_POST['email'] ?? '');
+$password = $_POST['password'] ?? '';
 
-$sql = "SELECT * FROM users 
-        WHERE email='$email' 
-        AND password='$password' 
-        AND role='student'";
+$stmt = $conn->prepare("SELECT * FROM users WHERE email = ? AND role = 'student'");
+$stmt->execute([$email]);
+$user = $stmt->fetch();
 
-$result = mysqli_query($conn,$sql);
+if ($user && password_verify($password, $user['password'])) {
 
-if(mysqli_num_rows($result) > 0){
-
+    $_SESSION['user_id'] = $user['id'];
+    $_SESSION['username'] = $user['email'];
+    $_SESSION['name'] = $user['name'];
     $_SESSION['role'] = 'student';
+    $_SESSION['enrollment_no'] = $user['enrollment_no'];
 
-    header("Location: student/dashboard.php");
+    header("Location: ../STUDENT/dashboard.php");
+    exit();
 
-}else{
+} else {
     echo "Invalid Student Login";
 }
 ?>

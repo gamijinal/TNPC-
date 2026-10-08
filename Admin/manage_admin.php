@@ -2,7 +2,7 @@
 
 include "db.php";
 
-$result=mysqli_query($conn,"SELECT * FROM admin");
+$rows = $conn->query("SELECT * FROM admin")->fetchAll();
 
 ?>
 
@@ -27,22 +27,15 @@ $result=mysqli_query($conn,"SELECT * FROM admin");
             <th>Action</th>
         </tr>
 
-        <?php
-
-        $query = "SELECT * FROM admin";
-        $result = mysqli_query($conn, $query);
-
-        while ($row = mysqli_fetch_assoc($result)) {
-
-        ?>
+        <?php foreach ($rows as $row) { ?>
 
             <tr>
                 <td><?php echo $row['id']; ?></td>
-                <td><?php echo $row['username']; ?></td>
+                <td><?php echo htmlspecialchars($row['username']); ?></td>
 
                 <td>
 
-                    <a href="delete_admin.php?id=<?php echo $row['id']; ?>">Delete</a>
+                    <a href="delete_admin.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Delete this admin?')">Delete</a>
 
                 </td>
 
